@@ -21,18 +21,21 @@ const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
 /* const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)` */
 const trans2 = (x, y) => `translate3d(${x / 8 + 200}px,${y / 8 - 60}px,0)`
 const trans3 = (x, y) => `translate3d(${x / 6 - 250}px,${y / 6 - 60}px,0)`
-const trans4 = (x, y) => `translate3d(${x / 3.5 + 250}px,${y / 3.5 + 150}px,0)`
+const trans4 = (x, y) => `translate3d(${x / 7 + 250}px,${y / 7 + 280}px,0)`
 const trans5 = (x, y) => `translate3d(${x / 5 - 100}px,${y / 5 + 200}px,0)`
-const trans6 = (x, y) => `translate3d(${x / 3 + 80}px,${y / 3 + 200}px,0)`
-const trans7 = (x, y) => `translate3d(${x / 3}px,${y / 3 - 80}px,0)`
+const trans6 = (x, y) => `translate3d(${x / 7 + 20 }px,${y / 7 + 380}px,0)`
+const trans7 = (x, y) => `translate3d(${x / 7}px,${y / 7 - 80}px,0)`
 const trans8 = (x, y) => `translate3d(${x / 8}px,${y / 8 + 30}px,0)`
-const trans9 = (x, y) => `translate3d(${x / 3 - 200}px,${y / 3 + 80}px,0)`
-const trans10 = (x, y) => `translate3d(${x / 3 - 500}px,${y / 3 + 200}px,0)`
-const trans11 = (x, y) => `translate3d(${x / 3 - 800}px,${y / 3 - 80}px,0)`
-const trans12 = (x, y) => `translate3d(${x / 3 - 500}px,${y / 3 + 0}px,0)`
-const trans13 = (x, y) => `translate3d(${x / 3 - 200}px,${y / 3 + 350}px,0)`
-const trans14 = (x, y) => `translate3d(${x / 3 + 200}px,${y / 3 + 400}px,0)`
-const trans15 = (x, y) => `translate3d(${x / 3 - 800}px,${y / 3 + 100}px,0)`
+const trans9 = (x, y) => `translate3d(${x / 7 - 200}px,${y / 7 + 80}px,0)`
+const trans10 = (x, y) => `translate3d(${x / 7 + 200}px,${y / 7 + 120}px,0)`
+const trans11 = (x, y) => `translate3d(${x / 7 - 440}px,${y / 7 - 80}px,0)`
+const trans12 = (x, y) => `translate3d(${x / 7 - 400}px,${y / 7 + 80}px,0)`
+const trans13 = (x, y) => `translate3d(${x / 7 - 200}px,${y / 7 + 300}px,0)`
+const trans14 = (x, y) => `translate3d(${x / 7 + 200}px,${y / 7 + 450}px,0)`
+const trans15 = (x, y) => `translate3d(${x / 7 - 350}px,${y / 7 + 180}px,0)`
+const trans16 = (x, y) => `translate3d(${x / 7 + 50}px,${y / 7 + 280}px,0)`
+const trans17 = (x, y) => `translate3d(${x / 7 - 130}px,${y / 7 + 400}px,0)`
+const trans18 = (x, y) => `translate3d(${x / 7 + 350}px,${y / 7 + 500}px,0)`
 
 
 const Top = () => {
@@ -156,6 +159,9 @@ const Top = () => {
                     <animated.div class="card13" style={{ transform: props.xy.interpolate(trans13) }} />
                     <animated.div class="card14" style={{ transform: props.xy.interpolate(trans14) }} />
                     <animated.div class="card15" style={{ transform: props.xy.interpolate(trans15) }} />
+                    <animated.div class="card16" style={{ transform: props.xy.interpolate(trans16) }} />
+                    <animated.div class="card17" style={{ transform: props.xy.interpolate(trans17) }} />
+                    <animated.div class="card18" style={{ transform: props.xy.interpolate(trans18) }} />
 
                 </Grid>
             </Grid >

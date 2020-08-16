@@ -1,1 +1,1 @@
-{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"Title for the Post 2","date":"2020-08-13"},"fields":{"slug":"react"}}},{"node":{"frontmatter":{"title":"Title for the Post","date":"2020-08-13"},"fields":{"slug":"gatsby"}}}]}}}
+{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"Title for the Post","date":"2020-08-13"},"fields":{"slug":"gatsby"}}},{"node":{"frontmatter":{"title":"Title for the Post 2","date":"2020-08-13"},"fields":{"slug":"react"}}}]}}}

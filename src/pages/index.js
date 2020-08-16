@@ -1,53 +1,19 @@
 import React from "react"
 import { Link } from 'gatsby'
-
-import { makeStyles } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
-import Grid from '@material-ui/core/Grid';
 /* import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar'; */
+import Grid from '@material-ui/core/Grid';
 
 import Layout from "../components/layout"
 import Head from "../components/head"
+import FloatCard from "../components/drawer"
 
 import '../styles/index.scss'
-import Top from "../components/top";
-import Entry from "../components/entry";
-
-const drawerWidth = 240;
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-  },
-  appBar: {
-    zIndex: theme.zIndex.drawer + 1,
-  },
-  drawer: {
-    width: drawerWidth,
-    backgroundColor: '#fff',
-    flexShrink: 0,
-  },
-  drawerPaper: {
-    width: drawerWidth,
-    top: 'unset',
-    height: 'inherit'
-    /* background: "linear-gradient(0deg,#d53369,#daae51,#fff)" */
-  },
-  drawerContainer: {
-    overflow: 'auto',
-  },
-  content: {
-    backgroundColor: '#fff',
-    flexGrow: 1,
-    padding: theme.spacing(3),
-  },
-}));
+import Top from "../components/top"
+import Entry from "../components/entry"
 
 
 export default function Home() {
-
-  const classes = useStyles();
 
   return <Layout>
     <Head title="Blog" />
@@ -93,48 +59,18 @@ export default function Home() {
     </div>
 
     <div style={{ display: 'flex' }}>
-      <Drawer
-        className={classes.drawer}
-        variant="permanent"
-        classes={{
-          paper: classes.drawerPaper,
-        }}
-      >
-
-        {/* <Toolbar /> */}
-        <div className={classes.drawerContainer}>
-          gdfgdfgdfg
-          {/* <List>
-            {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
-            ))}
-          </List>
-          <Divider />
-          <List>
-            {['All mail', 'Trash', 'Spam'].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
-            ))}
-          </List> */}
-        </div>
-      </Drawer>
 
 
+    <FloatCard />
 
 
-
-      <main className={classes.content} /* style={{ height: '50vh' }} */>
+      <main className="content" /* style={{ height: '50vh' }} */>
 
         <div>Hello world!</div>
         <p>Ganda Telogo <Link to="/contact">Omega</Link></p>
 
         <Grid container justify="center">
-          <Grid item xs={10}>
+          <Grid item xs={8}>
             <Entry />
           </Grid>
         </Grid>

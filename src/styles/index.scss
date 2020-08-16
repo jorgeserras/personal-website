@@ -1,7 +1,14 @@
 
 body {
     background: linear-gradient(90deg,#763BFA,#2393F3);
-    margin: 0
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.content {
+    background-color: #fff;
+    flex-grow: 1;
+    padding: 18px
 }
 
 .card1,
@@ -18,13 +25,16 @@ body {
 .card12,
 .card13,
 .card14,
-.card15 {
+.card15,
+.card16,
+.card17,
+.card18 {
     position: absolute;
     border-radius: 5px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    will-change: transform;
+    will-change: transform
 }
 
 /* .card1 {
@@ -38,33 +48,33 @@ body {
 } */
 
 .card2 {
-    width: 23ch;
-    height: 21ch;
+    width: 19ch;
+    height: 17ch;
     background-image: url('./icons/react.svg');
 }
 
 .card3 {
     /* opacity: 0.9; */
-    width: 20ch;
-    height: 20ch;
+    width: 15ch;
+    height: 15ch;
     background-image: url('./icons/wordpress-icon.svg');
 }
 
 .card4 {
-    width: 17ch;
-    height: 19ch;
+    width: 14ch;
+    height: 16ch;
     background-image: url('./icons/shopify.svg');
 }
 
 .card5 {
-    width: 10ch;
-    height: 10ch;
+    width: 7ch;
+    height: 7ch;
     background-image: url('./icons/logo-javascript.svg');
 }
 
 .card6 {
-    width: 15ch;
-    height: 15ch;
+    width: 12ch;
+    height: 12ch;
     background-image: url('./icons/python-5.svg');
 }
 
@@ -75,51 +85,69 @@ body {
 }
 
 .card8 {
-    width: 15ch;
-    height: 15ch;
+    width: 12ch;
+    height: 12ch;
     background-image: url('./icons/gatsby.svg');
 }
 
 .card9 {
-    width: 20ch;
-    height: 7ch;
+    width: 17ch;
+    height: 6ch;
     background-image: url('./icons/pwa-logo.svg');
 }
 
 .card10 {
-    width: 22ch;
-    height: 21ch;
+    width: 16ch;
+    height: 15ch;
     background-image: url('./icons/redux.svg');
 }
 
 .card11 {
-    width: 25.5ch;
-    height: 19ch;
+    width: 22.5ch;
+    height: 17ch;
     background-image: url('./icons/sass-1.svg');
 }
 
 .card12 {
-    width: 13.5ch;
-    height: 15ch;
+    width: 11.5ch;
+    height: 13ch;
     background-image: url('./icons/graphql.svg');
 }
 
 .card13 {
-    width: 17ch;
-    height: 25.5ch;
+    width: 10ch;
+    height: 15ch;
     background-image: url('./icons/figma-1.svg');
 }
 
 .card14 {
-    width: 25ch;
-    height: 15ch;
+    width: 21ch;
+    height: 13ch;
     background-image: url('./icons/nodejs-1.svg');
 }
 
 .card15 {
-    width: 31.5ch;
-    height: 10.5ch;
+    width: 23ch;
+    height: 7.5ch;
     background-image: url('./icons/cloudflare-1.svg');
+}
+
+.card16 {
+    width: 14ch;
+    height: 7.2ch;
+    background-image: url('./icons/php-1.svg');
+}
+
+.card17 {
+    width: 10ch;
+    height: 8ch;
+    background-image: url('./icons/material-ui-1.svg');
+}
+
+.card18 {
+    width: 12ch;
+    height: 12ch;
+    background-image: url('./icons/matlab-seeklogo.com.svg');
 }
 
 /* .container {
