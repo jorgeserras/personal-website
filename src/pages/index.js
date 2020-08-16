@@ -3,15 +3,16 @@ import { Link } from 'gatsby'
 
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
-
+import Grid from '@material-ui/core/Grid';
 /* import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar'; */
 
 import Layout from "../components/layout"
 import Head from "../components/head"
-import { useSpring, animated } from 'react-spring'
 
 import '../styles/index.scss'
+import Top from "../components/top";
+import Entry from "../components/entry";
 
 const drawerWidth = 240;
 
@@ -44,20 +45,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
-/* const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)` */
-const trans2 = (x, y) => `translate3d(${x / 8 + 35}px,${y / 8 - 230}px,0)`
-const trans3 = (x, y) => `translate3d(${x / 6 - 250}px,${y / 6 - 200}px,0)`
-const trans4 = (x, y) => `translate3d(${x / 3.5}px,${y / 3.5}px,0)`
-const trans5 = (x, y) => `translate3d(${x / 5 - 200}px,${y / 5 + 200}px,0)`
-const trans6 = (x, y) => `translate3d(${x / 3 + 200}px,${y / 3 + 200}px,0)`
-
-
 export default function Home() {
 
   const classes = useStyles();
-
-  const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }))
 
   return <Layout>
     <Head title="Blog" />
@@ -84,6 +74,8 @@ export default function Home() {
       <CardActions>
       </CardActions>
     </Card> */}
+
+    <Top />
 
     <div class="relative -mt-12 lg:-mt-24">
       <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" style={{ display: 'block', verticalAlign: 'middle' }}>
@@ -136,25 +128,16 @@ export default function Home() {
 
 
 
-      <main className={classes.content} style={{ height: '50vh' }}>
-
-
-
-
-
+      <main className={classes.content} /* style={{ height: '50vh' }} */>
 
         <div>Hello world!</div>
         <p>Ganda Telogo <Link to="/contact">Omega</Link></p>
 
-        <div class="container" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
-          {/* <animated.div class="card1" style={{ transform: props.xy.interpolate(trans1) }} /> */}
-          <animated.div class="card2" style={{ transform: props.xy.interpolate(trans2) }} />
-          <animated.div class="card3" style={{ transform: props.xy.interpolate(trans3) }} />
-          <animated.div class="card4" style={{ transform: props.xy.interpolate(trans4) }} />
-          <animated.div class="card5" style={{ transform: props.xy.interpolate(trans5) }} />
-          <animated.div class="card6" style={{ transform: props.xy.interpolate(trans6) }} />
-        </div >
-
+        <Grid container justify="center">
+          <Grid item xs={10}>
+            <Entry />
+          </Grid>
+        </Grid>
 
       </main>
 

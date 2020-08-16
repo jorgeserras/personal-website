@@ -1,6 +1,6 @@
 
 body {
-    background: linear-gradient(90deg,#2393F3,#763BFA);
+    background: linear-gradient(90deg,#763BFA,#2393F3);
     margin: 0
 }
 
@@ -9,7 +9,16 @@ body {
 .card3,
 .card4,
 .card5,
-.card6 {
+.card6,
+.card7,
+.card8,
+.card9,
+.card10,
+.card11,
+.card12,
+.card13,
+.card14,
+.card15 {
     position: absolute;
     border-radius: 5px;
     background-size: cover;
@@ -18,7 +27,7 @@ body {
     will-change: transform;
 }
 
-.card1 {
+/* .card1 {
     min-width: 60ch;
     min-height: 60ch;
     width: 45vw;
@@ -26,30 +35,30 @@ body {
     max-width: 100ch;
     max-height: 100ch;
     background-image: url(https://image.flaticon.com/icons/svg/119/119596.svg);
-}
+} */
 
 .card2 {
-    width: 25ch;
-    height: 25ch;
+    width: 23ch;
+    height: 21ch;
     background-image: url('./icons/react.svg');
 }
 
 .card3 {
-    opacity: 0.9;
-    width: 25ch;
-    height: 25ch;
-    background-image: url('./icons/wordpress-blue.svg');
+    /* opacity: 0.9; */
+    width: 20ch;
+    height: 20ch;
+    background-image: url('./icons/wordpress-icon.svg');
 }
 
 .card4 {
-    width: 25ch;
-    height: 25ch;
+    width: 17ch;
+    height: 19ch;
     background-image: url('./icons/shopify.svg');
 }
 
 .card5 {
-    width: 25ch;
-    height: 25ch;
+    width: 10ch;
+    height: 10ch;
     background-image: url('./icons/logo-javascript.svg');
 }
 
@@ -59,10 +68,64 @@ body {
     background-image: url('./icons/python-5.svg');
 }
 
-.container {
+.card7 {
+    width: 15ch;
+    height: 9ch;
+    background-image: url('./icons/aws-2.svg');
+}
+
+.card8 {
+    width: 15ch;
+    height: 15ch;
+    background-image: url('./icons/gatsby.svg');
+}
+
+.card9 {
+    width: 20ch;
+    height: 7ch;
+    background-image: url('./icons/pwa-logo.svg');
+}
+
+.card10 {
+    width: 22ch;
+    height: 21ch;
+    background-image: url('./icons/redux.svg');
+}
+
+.card11 {
+    width: 25.5ch;
+    height: 19ch;
+    background-image: url('./icons/sass-1.svg');
+}
+
+.card12 {
+    width: 13.5ch;
+    height: 15ch;
+    background-image: url('./icons/graphql.svg');
+}
+
+.card13 {
+    width: 17ch;
+    height: 25.5ch;
+    background-image: url('./icons/figma-1.svg');
+}
+
+.card14 {
+    width: 25ch;
+    height: 15ch;
+    background-image: url('./icons/nodejs-1.svg');
+}
+
+.card15 {
+    width: 31.5ch;
+    height: 10.5ch;
+    background-image: url('./icons/cloudflare-1.svg');
+}
+
+/* .container {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
