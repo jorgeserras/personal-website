@@ -69,7 +69,7 @@ export default function Home() {
         <div>Hello world!</div>
         <p>Ganda Telogo <Link to="/contact">Omega</Link></p>
 
-        <Grid container justify="center">
+        <Grid container justify="center" className="container-entries">
           <Grid item xs={8}>
             <Entry />
           </Grid>
