@@ -1,10 +1,10 @@
-import React from "react"
+import React, { useCallback, useEffect, useState, useRef } from "react"
 
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 
-import { useSpring, animated } from 'react-spring'
+import { useSpring, useTransition, animated } from 'react-spring'
 /* import { Spring } from 'react-spring/renderprops' */
 /* import anime2 from 'react-spring/renderprops/animated' */
 
@@ -15,6 +15,9 @@ const useStyles = makeStyles((theme) => ({
     menuButton: {
         marginRight: theme.spacing(2),
     },
+    title: {
+        color: '#fff'
+    }
 }));
 
 const widthSize = window.innerWidth / 2
@@ -41,24 +44,50 @@ const trans17 = (x, y) => `translate3d(${x / 7 - (widthSize / 7)}px,${y / 7 + (h
 const trans18 = (x, y) => `translate3d(${x / 7 + (widthSize / 2.7)}px,${y / 7 + (heightSize / 1.1)}px,0)`
 
 const Top = () => {
-
+    const ref = useRef([])
     const classes = useStyles();
-
+    const [item, setItem] = useState('Developer')
     const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }))
 
-    console.log(props.xy)
+    const transitions = useTransition(item, null, {
+        from: { opacity: 0, height: 0, innerHeight: 0, /* transform: 'perspective(600px)', */ color: '#08fdd8' }, /* rotateX(0deg) */
+        enter: [
+            { opacity: 1, height: 80, innerHeight: 80 },
+            { /* transform: 'perspective(600px)', */ color: '#f0db4f' }, /* rotateX(180deg) */
+            { /* transform: 'perspective(600px)' */ }, /*  rotateX(0deg) */
+        ],
+        leave: [{ color: '#fff' }, { innerHeight: 0 }, { opacity: 0, height: 0 }],
+        update: { color: '#08fdd8' },
+    })
+
+    const reset = useCallback(() => {
+        ref.current.map(clearTimeout)
+        ref.current = []
+        setItem('Developer')
+        ref.current.push(setTimeout(() => setItem('Engineer'), 2000))
+        ref.current.push(setTimeout(() => setItem('FreeLancer'), 5000))
+        ref.current.push(setTimeout(() => setItem('Entrepeneur'), 8000))
+        /* ref.current.push(setTimeout(() => reset(), 15000)) */
+    }, [])
+
+    useEffect(() => void reset(), [])
+
+    /* console.log(props.xy) */
     return (
         <Grid container justify="center" alignItems="center" className={classes.root} onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
             <Grid item xs={2}>
 
             </Grid>
-            <Grid item xs={4}>
-                <h1>ajfoaoiajf</h1>
-                <h2>gouijagaigaagoagaoao</h2>
-                <p>gouijagaigaagoagaoao</p>
-                <p>gouijagaigaagoagaoao</p>
+            <Grid item xs={4} className={classes.title}>
+                <h1>Hi, I'm a </h1>
+                {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
+                    <animated.div class="transitions-item" key={key} style={rest} onClick={reset}>
+                        <animated.div style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>
+                    </animated.div>
+                ))}
+                <p>Front End / Back End / WordPress / Machine Learning</p>
                 <br />
-                <Button color="primary">aagaigiagi</Button>
+                <Button variant="contained" color="secondary">Contact me</Button>
             </Grid>
 
 

@@ -1,9 +1,26 @@
 
 body {
+    font-family: Montserrat, Camphor, Open Sans, Segoe UI, sans-serif;
     background: linear-gradient(90deg,#763BFA,#2393F3);
     margin: 0;
     overflow-x: hidden;
 }
+
+.transitions-item {
+    overflow: hidden;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    will-change: transform, opacity, height;
+    white-space: nowrap;
+    cursor: pointer;
+    line-height: 80px;
+  }
 
 .content {
     background-color: #fff;
