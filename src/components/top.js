@@ -16,7 +16,10 @@ const useStyles = makeStyles((theme) => ({
         marginRight: theme.spacing(2),
     },
     title: {
-        color: '#fff'
+        color: '#fff',
+        "& h1": {
+            margin: theme.spacing(2,0)
+        }
     }
 }));
 
@@ -50,13 +53,13 @@ const Top = () => {
     const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }))
 
     const transitions = useTransition(item, null, {
-        from: { opacity: 0, height: 0, innerHeight: 0, /* transform: 'perspective(600px)', */ color: '#08fdd8' }, /* rotateX(0deg) */
+        from: { opacity: 0, height: 0/* , innerHeight: 0 */, /* transform: 'perspective(600px)', */ color: '#08fdd8' }, /* rotateX(0deg) */
         enter: [
-            { opacity: 1, height: 80, innerHeight: 80 },
+            { opacity: 1, height: 30/* , innerHeight: 30 */ },
             { /* transform: 'perspective(600px)', */ color: '#f0db4f' }, /* rotateX(180deg) */
             { /* transform: 'perspective(600px)' */ }, /*  rotateX(0deg) */
         ],
-        leave: [{ color: '#fff' }, { innerHeight: 0 }, { opacity: 0, height: 0 }],
+        leave: [{ color: '#fff' }, { /* innerHeight: 0 */ }, { opacity: 0, height: 0 }],
         update: { color: '#08fdd8' },
     })
 

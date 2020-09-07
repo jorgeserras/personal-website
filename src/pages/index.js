@@ -11,6 +11,7 @@ import FloatCard from "../components/drawer"
 import '../styles/index.scss'
 import Top from "../components/top"
 import Entry from "../components/entry"
+import Card from "../components/card"
 import theme from "../components/theme"
 
 
@@ -68,12 +69,49 @@ export default function Home() {
 
         <main className="content" /* style={{ height: '50vh' }} */>
 
-          <div>Hello world!</div>
-          <p>Ganda Telogo <Link to="/contact">Omega</Link></p>
-
           <Grid container justify="center" className="container-entries">
             <Grid item xs={8}>
-              <Entry />
+              <h1>Profile</h1>
+            </Grid>
+            <Grid item container xs={8}>
+              <Grid item xs={4}>
+                <Card
+                  title="About me"
+                  desc="Major in Systems, Decision and Con"
+                />
+              </Grid>
+              <Grid item xs={4}>
+                <Card
+                  title="Interests"
+                  desc="Major in Systems, Decision and Con"
+                />
+              </Grid>
+              <Grid item xs={4}>
+                <Card
+                  title="Hobbies"
+                  desc="Major in Systems, Decision and Con"
+                />
+              </Grid>
+            </Grid>
+            <Grid item xs={8}>
+              <h1>Education</h1>
+            </Grid>
+            <Grid item xs={8}>
+              <h1>Experience</h1>
+            </Grid>
+            <Grid item xs={8}>
+              <Entry
+                title="IST | Electrical and Computer Engineering"
+                desc="Major in Systems, Decision and Control / Minor in Computers, Second Cycle's Average: 17"
+                date="2013 - 2018"
+              />
+            </Grid>
+            <Grid item xs={8}>
+              <Entry
+                title="Forall Phones | Front End Developer"
+                desc="fsdfdsf  sdfdsf sdsd sdf sd sdf dsf sddssdf"
+                date="April 2019 - April 2020"
+              />
             </Grid>
           </Grid>
 
