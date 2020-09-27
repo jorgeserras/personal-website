@@ -90,7 +90,7 @@ const FloatCard = ({ title }) => {
             <EmailIcon />
           </Avatar>
         </Grid>
-        <p>I'm constantly participating in new projects and gathering experience to enhance myself. Love building and understanding things for scratch.</p>
+        <p>I'm constantly participating in new projects and gathering experience to enhance myself. Love building and understanding things from scratch.</p>
         <Chip
           icon={<PlaceIcon />}
           label="Lisbon, Portugal"
