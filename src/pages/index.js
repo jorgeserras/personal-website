@@ -119,8 +119,9 @@ export default function Home() {
               {/* Simbolo do Ist e link para site do IST */}
               <Entry
                 title="IST | Master's Degree in Electrical and Computers Engineering"
-                desc="Major in Systems, Decision and Control / Minor in Computers, Second Cycle's Average: 17"
+                desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
                 date="2013 - 2018"
+                secondBtn
               />
 
               {/* Academic Merit/Excellence:
@@ -148,7 +149,7 @@ http://bit.ly/jorgeserras_DBNOD
             <Grid item xs={8}>
               <Entry
                 title="IST | Electrical and Computer Engineering"
-                desc="Major in Systems, Decision and Control / Minor in Computers, Second Cycle's Average: 17"
+                desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
                 date="2013 - 2018"
               />
             </Grid>
@@ -167,14 +168,14 @@ And much more
             <Grid item xs={8}>
               <Entry
                 title="IST | Electrical and Computer Engineering"
-                desc="Major in Systems, Decision and Control / Minor in Computers, Second Cycle's Average: 17"
+                desc={["Major in Systems, Decision and Control / Minor in Computers, Second Cycle's Average: 17"]}
                 date="2013 - 2018"
               />
             </Grid>
             <Grid item xs={8}>
               <Entry
                 title="Forall Phones | Front End Developer"
-                desc="fsdfdsf  sdfdsf sdsd sdf sd sdf dsf sddssdf"
+                desc={["Major in Systems, Decision and Control / Minor in Computers, Second Cycle's Average: 17"]}
                 date="April 2019 - April 2020"
               />
             </Grid>

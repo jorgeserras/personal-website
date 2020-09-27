@@ -12,7 +12,7 @@ import entryStyles from './entry.module.scss'
 
 const Entry = (props) => {
 
-    const { image, alt, title, desc, date } = props
+    const { image, alt, title, desc = [], date, secondBtn } = props
 
     return (
         <Grid container justify="center" className={entryStyles.container}>
@@ -34,7 +34,9 @@ const Entry = (props) => {
                 </Grid>
                 <Grid container>
                     <Grid item xs={8} >
-                        <p className={entryStyles.description}>{desc}</p>
+                        {desc.map((d, i) =>
+                            <p key={i} className={entryStyles.description}>{d}</p>
+                        )}
                     </Grid>
                     <Grid item xs={4} >
                         <Chip
@@ -66,14 +68,27 @@ const Entry = (props) => {
                 </Grid>
                 <Grid container>
                     <Grid item xs={8} container>
-                        <Avatar variant="square" alt="alt asfasf" src={icon} className={entryStyles.stack} />
-                        <Avatar variant="square" alt="alt asfasf" src={icon2} className={entryStyles.stack} />
-                        <Avatar variant="square" alt="alt asfasf" src={icon3} className={entryStyles.stack} />
+                        {secondBtn ?
+                            <>
+                                <Button /* className={classes.confirmButton} */ variant="contained" color="primary" /* onClick={() => onClick(data)} */ >
+                                    Academic Merit
+                                </Button>
+                                <Button /* className={classes.confirmButton} */ variant="contained" color="secondary" /* onClick={() => onClick(data)} */ >
+                                    Msc Dissertation
+                                </Button>
+                            </>
+                            :
+                            <>
+                                <Avatar variant="square" alt="alt asfasf" src={icon} className={entryStyles.stack} />
+                                <Avatar variant="square" alt="alt asfasf" src={icon2} className={entryStyles.stack} />
+                                <Avatar variant="square" alt="alt asfasf" src={icon3} className={entryStyles.stack} />
+                            </>
+                        }
                     </Grid>
                     <Grid item xs={4} >
                         <Button /* className={classes.confirmButton} */ variant="contained" color="secondary" /* onClick={() => onClick(data)} */ >
-                            Check my work!
-                    </Button>
+                            Instituto Superior Técnico
+                        </Button>
                     </Grid>
                 </Grid>
             </Grid>

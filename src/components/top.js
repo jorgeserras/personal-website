@@ -70,6 +70,8 @@ const Top = () => {
         ref.current.push(setTimeout(() => setItem('Engineer'), 2000))
         ref.current.push(setTimeout(() => setItem('FreeLancer'), 5000))
         ref.current.push(setTimeout(() => setItem('Entrepeneur'), 8000))
+        ref.current.push(setTimeout(() => setItem('Full Stack'), 12000))
+        ref.current.push(setTimeout(() => setItem('Tech Lead'), 15000))
         /* ref.current.push(setTimeout(() => reset(), 15000)) */
     }, [])
 
@@ -88,7 +90,7 @@ const Top = () => {
                         <animated.div style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>
                     </animated.div>
                 ))}
-                <p>Front End / Back End / WordPress / Machine Learning</p>
+                <p>Front End / Back End / Machine Learning / Electronics</p>
                 <br />
                 <Button variant="contained" color="secondary">Contact me</Button>
             </Grid>
