@@ -77,25 +77,90 @@ export default function Home() {
               <Grid item xs={4}>
                 <Card
                   title="About me"
-                  desc="Major in Systems, Decision and Con"
+                  desc="DIY Enthusiast | Entrepeneur"
+                  text="I finished my Master's Degree in Electrical and Computers Engineering at IST with focus on Control and Decision systems. My dissertation was associated to Machine Learning, more specifically in the development of a complete system for Anomaly detection in multivariate time series. The latter is known as METEOR and can be accessed freely through my personal website.
+                  I always have active personal projects and hobbies to improve other skills outside the course's scope. Love building and inventing new things, like working with arduinos and electronic components aswell as programming Back-end and Front-end applications.
+                  I basically like everything associated to Engineering and I'm also passionate for History and Geography.
+                  I consider myself a fast learner, learning by doing and researching about the subject independently. "
                 />
+                {/* 
+                
+                - Portuguese
+                - English
+                - Spanish
+
+                */}
               </Grid>
               <Grid item xs={4}>
                 <Card
                   title="Interests"
-                  desc="Major in Systems, Decision and Con"
+                  desc="Tech | Music | Culture"
+                  text="I finished my Master's Degree in Electrical and Computers Engineering at IST with focus on Control and Decision systems. My dissertation was associated to Machine Learning, more specifically in the development of a complete system for Anomaly detection in multivariate time series. The latter is known as METEOR and can be accessed freely through my personal website.
+                  I always have active personal projects and hobbies to improve other skills outside the course's scope. Love building and inventing new things, like working with arduinos and electronic components aswell as programming Back-end and Front-end applications.
+                  I basically like everything associated to Engineering and I'm also passionate for History and Geography.
+                  I consider myself a fast learner, learning by doing and researching about the subject independently. "
                 />
               </Grid>
               <Grid item xs={4}>
                 <Card
                   title="Hobbies"
-                  desc="Major in Systems, Decision and Con"
+                  desc="Music | Programming | Gaming"
+                  text="I finished my Master's Degree in Electrical and Computers Engineering at IST with focus on Control and Decision systems. My dissertation was associated to Machine Learning, more specifically in the development of a complete system for Anomaly detection in multivariate time series. The latter is known as METEOR and can be accessed freely through my personal website.
+                  I always have active personal projects and hobbies to improve other skills outside the course's scope. Love building and inventing new things, like working with arduinos and electronic components aswell as programming Back-end and Front-end applications.
+                  I basically like everything associated to Engineering and I'm also passionate for History and Geography.
+                  I consider myself a fast learner, learning by doing and researching about the subject independently. "
                 />
               </Grid>
             </Grid>
             <Grid item xs={8}>
               <h1>Education</h1>
             </Grid>
+            <Grid item xs={8}>
+              {/* Simbolo do Ist e link para site do IST */}
+              <Entry
+                title="IST | Master's Degree in Electrical and Computers Engineering"
+                desc="Major in Systems, Decision and Control / Minor in Computers, Second Cycle's Average: 17"
+                date="2013 - 2018"
+              />
+
+              {/* Academic Merit/Excellence:
+http://bit.ly/academic_merit */}
+
+{/* Master Dissertation:
+http://bit.ly/jorgeserras_dissertation */}
+
+{/* Talk a bit about Thesis, Bolsa and Paper and why not PhD*/}
+
+{/* Research Grant
+Instituto de Telecomunicações & INESC-ID - Oct. 2018 / Feb. 2019
+Associated to the research/development of an outlier detection system from
+patients with cancer, integrated in project PERSEIDS funded by Portuguese
+Foundation for Science and Technology (FCT). 
+
+http://bit.ly/jorgeserras_DBNOD
+
+*/}
+            </Grid>
+
+            <Grid item xs={8}>
+              <h1>Main Skills</h1>
+            </Grid>
+            <Grid item xs={8}>
+              <Entry
+                title="IST | Electrical and Computer Engineering"
+                desc="Major in Systems, Decision and Control / Minor in Computers, Second Cycle's Average: 17"
+                date="2013 - 2018"
+              />
+            </Grid>
+            {/* 
+            C Python Java MatLab Simulink LaTEX Arduino LabVIEW JS R
+React Redux Computer Vision Linux Machine Learning PHP MySQL 
+
+And much more
+
+*/}
+
+
             <Grid item xs={8}>
               <h1>Experience</h1>
             </Grid>

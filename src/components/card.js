@@ -12,12 +12,19 @@ import entryStyles from './card.module.scss'
 
 const Card = (props) => {
 
-    const { image, alt, title, desc } = props
+    const { image, alt, title, desc, text } = props
 
     return (
         <Grid container justify="center" className={entryStyles.container}>
-            <h2 className={entryStyles.title}>{title}</h2>
-            <h3 className={entryStyles.time}>{desc}</h3>
+            <Grid item xs={12} align="center">
+                <h2 className={entryStyles.title}>{title}</h2>
+            </Grid>
+            <Grid item xs={12} align="center">
+                <h3 className={entryStyles.time}>{desc}</h3>
+            </Grid>
+            <Grid item xs={12}>
+                <p className={entryStyles.time}>{text}</p>
+            </Grid>
             {/* <Grid item xs={1} >
                 <Grid container className={entryStyles.avatarContainer} >
                     <Avatar alt={alt} src={image} className={entryStyles.avatar}>
@@ -61,7 +68,7 @@ const Card = (props) => {
                         />
                     </Grid>
                 </Grid> */}
-               {/*  <Grid container>
+                {/*  <Grid container>
                     <Grid item xs={8} container>
                         <Avatar variant="square" alt="alt asfasf" src={icon} className={entryStyles.stack} />
                         <Avatar variant="square" alt="alt asfasf" src={icon2} className={entryStyles.stack} />
