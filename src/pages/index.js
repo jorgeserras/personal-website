@@ -79,7 +79,7 @@ export default function Home() {
                   title="About me"
                   desc="DIY Enthusiast | Entrepeneur"
                   text="I finished my Master's Degree in Electrical and Computers Engineering at IST with focus on Control and Decision systems. My dissertation was associated to Machine Learning, more specifically in the development of a complete system for Anomaly detection in multivariate time series. The latter is known as METEOR and can be accessed freely through my personal website.
-                  I always have active personal projects and hobbies to improve other skills outside the course's scope. Love building and inventing new things, like working with arduinos and electronic components aswell as programming Back-end and Front-end applications.
+                  I always have active personal projects and hobbies to improve other skills outside the course's scope. Love building and building new things from scratch, like working with arduinos and electronic components aswell as programming Back-end and Front-end applications.
                   I basically like everything associated to Engineering and I'm also passionate for History and Geography.
                   I consider myself a fast learner, learning by doing and researching about the subject independently. "
                 />

@@ -13,7 +13,7 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp'
 import PlaceIcon from '@material-ui/icons/Place'
 import EmailIcon from '@material-ui/icons/Email'
 
-import image from '../styles/icons/shopify.svg'
+import image from '../styles/imgs/serras_small.jpg'
 
 const drawerWidth = 250
 
@@ -23,10 +23,22 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#fff',
     flexShrink: 0,
   },
+  desc: {
+    margin: theme.spacing(1, 0),
+    fontSize: '0.9em',
+    textAlign: 'left'
+  },
+  chip: {
+    margin: theme.spacing(1, 0)
+  },
+  btn: {
+    marginTop: theme.spacing(1)
+  },
   drawerPaper: {
+    boxShadow: '0 14px 26px -12px #4AD295, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 10px 12px -7px rgba(54, 244, 191, 0.3)',
     width: drawerWidth,
-    top: '40%',
-    left: '16px',
+    top: '35%',
+    left: '24px',
     height: 'inherit',
     backgroundColor: "rgba(255,255,255,0.6)",
     borderRadius: "6px"
@@ -36,10 +48,19 @@ const useStyles = makeStyles((theme) => ({
     height: '64px',
     width: '64px'
   },
+  icon: {
+    backgroundColor: theme.palette.primary.light,
+    "&:hover": {
+      backgroundColor: theme.palette.primary.main,
+    }
+  },
   drawerContainer: {
     overflow: 'auto',
-    padding: '16px',
-    textAlign: 'center'
+    padding: '24px',
+    textAlign: 'center',
+    "& h4": {
+      margin: theme.spacing(1, 0)
+    }
   },
   content: {
     backgroundColor: '#fff',
@@ -48,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
   },
   social: {
     "& div": {
-      margin: '0 4px'
+      margin: '4px'
     }
   }
 }));
@@ -72,32 +93,42 @@ const FloatCard = ({ title }) => {
         <Avatar alt="Jorge Serras" src={image} className={classes.avatar}>
           {" "}
         </Avatar>
-        <h1>Jorge Serras</h1>
-        <h3>Electrical Engineer</h3>
-        <h3>FullStack Developer</h3>
-        <h3>FreeLancer</h3>
+        <h2>Jorge Serras</h2>
+        <h4>Electrical Engineer</h4>
+        <h4>FullStack Developer</h4>
+        <h4>FreeLancer</h4>
         <Grid container justify="center" className={classes.social}>
-          <Avatar alt="LinkedIn" >
-            <LinkedInIcon />
-          </Avatar>
-          <Avatar alt="GitHub" >
-            <GitHubIcon />
-          </Avatar>
-          <Avatar alt="WhatsApp" >
-            <WhatsAppIcon />
-          </Avatar>
-          <Avatar alt="Email" >
-            <EmailIcon />
-          </Avatar>
+          <a alt="Linkedin" rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/jorgeserras/">
+            <Avatar alt="LinkedIn" className={classes.icon}>
+              <LinkedInIcon />
+            </Avatar>
+          </a>
+          <a alt="GitHub" rel="noreferrer noopener" target="_blank" href="https://github.com/jorgeserras">
+            <Avatar alt="GitHub" className={classes.icon}>
+              <GitHubIcon />
+            </Avatar>
+          </a>
+          <a alt="WhatsApp" rel="noreferrer noopener" target="_blank" href="https://wa.me/351969900074?text=Hi%20Jorge!%20I%20saw%20your%20website%20and%20wanted%20to%20chat">
+            <Avatar alt="WhatsApp" className={classes.icon}>
+              <WhatsAppIcon />
+            </Avatar>
+          </a>
+          <a alt="Email" href="mailto:jorgefuzetaserras@gmail.com">
+            <Avatar alt="Email" className={classes.icon}>
+              <EmailIcon />
+            </Avatar>
+          </a>
         </Grid>
-        <p>I'm constantly participating in new projects and gathering experience to enhance myself. Love building and understanding things from scratch.</p>
+        <p className={classes.desc}>I'm constantly engaging in new projects and ideas to enhance myself and others around me. Interested in remodeling a business or create something unique?</p>
         <Chip
+          className={classes.chip}
+          color="primary"
           icon={<PlaceIcon />}
           label="Lisbon, Portugal"
           variant="outlined"
         />
 
-        <Button variant="contained" color="secondary">Download CV</Button>
+        <Button className={classes.btn} variant="contained" color="primary">Download CV</Button>
         {/*             <Chip
                             avatar={<Avatar alt="Natacha" src={icon} />}
                             label="Production"
