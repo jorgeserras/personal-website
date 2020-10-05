@@ -1,4 +1,6 @@
 import React from 'react'
+import FavoriteIcon from '@material-ui/icons/Favorite'
+import { Grid } from '@material-ui/core'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import footerStyles from './footer.module.scss'
@@ -16,7 +18,7 @@ const Footer = () => {
 
     return (
         <footer className={footerStyles.footer}>
-            <p>Created by {data.site.siteMetadata.author}, © 2020</p>
+            <Grid container justify="center" alignItems="center"> Made with <FavoriteIcon className={footerStyles.icon} color="secondary" /> by {data.site.siteMetadata.author} © 2020</Grid>
         </footer>
     )
 }
