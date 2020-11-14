@@ -78,9 +78,10 @@ export default function Home() {
                 <Card
                   title="About me"
                   desc="DIY Enthusiast | Entrepeneur"
-                  text="I finished my Master's Degree in Electrical and Computers Engineering at IST with focus on Control and Decision systems. My dissertation was associated to Machine Learning, more specifically in the development of a complete system for Anomaly detection in multivariate time series. The latter is known as METEOR and can be accessed freely through my personal website.
-                  I always have active personal projects and hobbies to improve other skills outside the course's scope. Love building and building new things from scratch, like working with arduinos and electronic components aswell as programming Back-end and Front-end applications.
-                  I basically like everything associated to Engineering and I'm also passionate for History and Geography.
+                  text="I finished my Master's Degree in Electrical and Computers Engineering at IST with focus on Control and Decision systems. My dissertation falls in Machine Learning, more specifically in the development of a complete system for Anomaly detection in multivariate time series. The latter is known as METEOR and can be accessed freely.
+                  I always have active personal projects and hobbies to improve other skills outside work's scope. 
+                  Love building new things from scratch, from working with arduinos and electronic components to programming Back-end and Front-end applications.
+                  I like everything associated to Engineering and I'm passionate for History and Geography.
                   I consider myself a fast learner, learning by doing and researching about the subject independently. "
                 />
                 {/* 
@@ -94,21 +95,20 @@ export default function Home() {
               <Grid item xs={4}>
                 <Card
                   title="Interests"
-                  desc="Tech | Music | Culture"
-                  text="I finished my Master's Degree in Electrical and Computers Engineering at IST with focus on Control and Decision systems. My dissertation was associated to Machine Learning, more specifically in the development of a complete system for Anomaly detection in multivariate time series. The latter is known as METEOR and can be accessed freely through my personal website.
-                  I always have active personal projects and hobbies to improve other skills outside the course's scope. Love building and inventing new things, like working with arduinos and electronic components aswell as programming Back-end and Front-end applications.
-                  I basically like everything associated to Engineering and I'm also passionate for History and Geography.
-                  I consider myself a fast learner, learning by doing and researching about the subject independently. "
+                  desc="Tech | Art | Culture"
+                  text="I'm always interested in finding better ways of doing not only my work but anything else around me, most of the times by automating processes.
+                  Sometimes the secret is on improving existing features than introducing new ones.
+                  When handling any problem, I always try to find every solution possible and its outcomes.
+                  Never discard a book by its cover. I've always had a passion for philosofy and culture, finding myself many times reading and learning about history and foreign tales.
+                  In my opinion, the best way to express ourselves is through music, which became a part of my life since little."
                 />
               </Grid>
               <Grid item xs={4}>
                 <Card
                   title="Hobbies"
                   desc="Music | Programming | Gaming"
-                  text="I finished my Master's Degree in Electrical and Computers Engineering at IST with focus on Control and Decision systems. My dissertation was associated to Machine Learning, more specifically in the development of a complete system for Anomaly detection in multivariate time series. The latter is known as METEOR and can be accessed freely through my personal website.
-                  I always have active personal projects and hobbies to improve other skills outside the course's scope. Love building and inventing new things, like working with arduinos and electronic components aswell as programming Back-end and Front-end applications.
-                  I basically like everything associated to Engineering and I'm also passionate for History and Geography.
-                  I consider myself a fast learner, learning by doing and researching about the subject independently. "
+                  text="Most of my free time I spent programming my own projects and ideas as well as studying novelty subjects, keeping up to date with the ever changing world.
+                  Since little that I love gaming and music, which are the main ways I recharge my energy."
                 />
               </Grid>
             </Grid>
@@ -123,6 +123,14 @@ export default function Home() {
                 date="2013 - 2018"
                 secondBtn
               />
+            </Grid>
+            <Grid item xs={8}>
+              <Entry
+                title="Online Courses | Development"
+                desc={["Wide set of completed online courses from frameworks to novelty technologies", "Always find time to enhance your skills through self learning"]}
+                date="2013 - Present"
+              />
+            </Grid>
 
               {/* Academic Merit/Excellence:
 http://bit.ly/academic_merit */}
@@ -141,14 +149,27 @@ Foundation for Science and Technology (FCT).
 http://bit.ly/jorgeserras_DBNOD
 
 */}
-            </Grid>
 
             <Grid item xs={8}>
               <h1>Main Skills</h1>
             </Grid>
             <Grid item xs={8}>
               <Entry
-                title="IST | Electrical and Computer Engineering"
+                title="Machine Learning | Data Science"
+                desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
+                date="2013 - 2018"
+              />
+            </Grid>
+            <Grid item xs={8}>
+              <Entry
+                title="Web Development"
+                desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
+                date="2013 - 2018"
+              />
+            </Grid>
+            <Grid item xs={8}>
+              <Entry
+                title="Management"
                 desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
                 date="2013 - 2018"
               />
@@ -168,8 +189,16 @@ And much more
             <Grid item xs={8}>
               <Entry
                 title="IST | Electrical and Computer Engineering"
-                desc={["Major in Systems, Decision and Control / Minor in Computers, Second Cycle's Average: 17"]}
+                desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
                 date="2013 - 2018"
+              />
+            </Grid>
+            <Grid item xs={8}>
+              <Entry
+                title="Telecomunications Institute | Research Grant"
+                desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
+                date="2013 - 2018"
+                secondBtn
               />
             </Grid>
             <Grid item xs={8}>
@@ -177,6 +206,27 @@ And much more
                 title="Forall Phones | Front End Developer"
                 desc={["Major in Systems, Decision and Control / Minor in Computers, Second Cycle's Average: 17"]}
                 date="April 2019 - April 2020"
+              />
+            </Grid>
+            <Grid item xs={8}>
+              <Entry
+                title="Nomad & Tribrs | Front End Developer"
+                desc={["Major in Systems, Decision and Control / Minor in Computers, Second Cycle's Average: 17"]}
+                date="2013 - 2018"
+              />
+            </Grid>
+            <Grid item xs={8}>
+              <Entry
+                title="Muvsy | Founder & Tech Lead"
+                desc={["Major in Systems, Decision and Control / Minor in Computers, Second Cycle's Average: 17"]}
+                date="2013 - 2018"
+              />
+            </Grid>
+            <Grid item xs={8}>
+              <Entry
+                title="Relive | Tech Lead"
+                desc={["Major in Systems, Decision and Control / Minor in Computers, Second Cycle's Average: 17"]}
+                date="2013 - 2018"
               />
             </Grid>
           </Grid>

@@ -99,7 +99,7 @@ const Top = () => {
             <Grid item xs={6} /* class="container" */>
                 <Grid container justify="center" alignItems="center">
                     {/* <animated.div class="card1" style={{ transform: props.xy.interpolate(trans1) }} /> */}
-                    <animated.div class="card2" style={{ transform: props.xy.interpolate(trans2) }} />
+                    <div class="card2" style={{ transform: trans2(0,0) }} />
                     <animated.div class="card3" style={{ transform: props.xy.interpolate(trans3) }} />
                     <animated.div class="card4" style={{ transform: props.xy.interpolate(trans4) }} />
                     <animated.div class="card5" style={{ transform: props.xy.interpolate(trans5) }} />
