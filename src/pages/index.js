@@ -119,50 +119,33 @@ export default function Home() {
               {/* Simbolo do Ist e link para site do IST */}
               <Entry
                 title="IST | Master's Degree in Electrical and Computers Engineering"
-                desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
+                desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17", "MSc Dissertation mark: 19"]}
                 date="2013 - 2018"
                 secondBtn
               />
             </Grid>
-            <Grid item xs={8}>
-              <Entry
-                title="Online Courses | Development"
-                desc={["Wide set of completed online courses from frameworks to novelty technologies", "Always find time to enhance your skills through self learning"]}
-                date="2013 - Present"
-              />
-            </Grid>
+            {/* Academic Merit/Excellence: bit.ly/academic_merit */}
+              {/* Master Dissertation: bit.ly/jorgeserras_dissertation */}
 
-              {/* Academic Merit/Excellence:
-http://bit.ly/academic_merit */}
 
-{/* Master Dissertation:
-http://bit.ly/jorgeserras_dissertation */}
-
-{/* Talk a bit about Thesis, Bolsa and Paper and why not PhD*/}
-
-{/* Research Grant
-Instituto de Telecomunicações & INESC-ID - Oct. 2018 / Feb. 2019
-Associated to the research/development of an outlier detection system from
-patients with cancer, integrated in project PERSEIDS funded by Portuguese
-Foundation for Science and Technology (FCT). 
-
-http://bit.ly/jorgeserras_DBNOD
-
-*/}
+{/* De alguma maneira meter
+ Wide set of completed online courses from frameworks to novelty technologies", 
+ "Always find time to enhance your skills through self learning"
+  */}
 
             <Grid item xs={8}>
               <h1>Main Skills</h1>
             </Grid>
             <Grid item xs={8}>
               <Entry
-                title="Machine Learning | Data Science"
+                title="Web Development"
                 desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
                 date="2013 - 2018"
               />
             </Grid>
             <Grid item xs={8}>
               <Entry
-                title="Web Development"
+                title="Machine Learning | Data Science"
                 desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
                 date="2013 - 2018"
               />
@@ -184,50 +167,58 @@ And much more
 
 
             <Grid item xs={8}>
-              <h1>Experience</h1>
-            </Grid>
-            <Grid item xs={8}>
-              <Entry
-                title="IST | Electrical and Computer Engineering"
-                desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
-                date="2013 - 2018"
-              />
+              <h1>Main Experience</h1>
             </Grid>
             <Grid item xs={8}>
               <Entry
                 title="Telecomunications Institute | Research Grant"
-                desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
-                date="2013 - 2018"
+                desc={["Associated to the research/development of an outlier detection system from patients with cancer, integrated in project PERSEIDS. A research paper was written."]}
+                date="Oct. 2018 - Feb. 2019"
                 secondBtn
               />
+               {/* Funded by: Portuguese Foundation for Science and Technology (FCT) */}
+               {/* bit.ly/jorgeserras_DBNOD */}
+               {/* bit.ly/DBNMeteor */}
+
+               {/* Maybe more things like those on old site */}
+
             </Grid>
             <Grid item xs={8}>
               <Entry
                 title="Forall Phones | Front End Developer"
-                desc={["Major in Systems, Decision and Control / Minor in Computers, Second Cycle's Average: 17"]}
+                desc={["Participated in building everything Front-End associated including an internal stock controller app (Opsify), Shopify Design and internal management apps using websockets for real time sales tracking and analytics. Constant improvement and support to increase Production efficiency by optimizing UX and minimizing time consumption."]}
                 date="April 2019 - April 2020"
-              />
+              /> {/* forallphones.com */}
             </Grid>
             <Grid item xs={8}>
               <Entry
-                title="Nomad & Tribrs | Front End Developer"
-                desc={["Major in Systems, Decision and Control / Minor in Computers, Second Cycle's Average: 17"]}
-                date="2013 - 2018"
-              />
+                title="Nomad | Full Stack Developer"
+                desc={["Foreign startup with two products aiming at providing cashback rewards for customers through gamification. Nomad Card is a PWA webapp for local businesses (uses GeoLocationand QR scanning) while Tribrs is a Shopify app for online stores. All the Front-End and part ofBack-End was developed by myself being still an active project."]}
+                date="Sep. 2019 - Present"
+              /> 
+              {/* app.nomadcard.city */}
             </Grid>
             <Grid item xs={8}>
               <Entry
-                title="Muvsy | Founder & Tech Lead"
-                desc={["Major in Systems, Decision and Control / Minor in Computers, Second Cycle's Average: 17"]}
-                date="2013 - 2018"
+                title="Tribrs | Front End Developer"
+                desc={["Foreign startup with two products aiming at providing cashback rewards for customers through gamification. Nomad Card is a PWA webapp for local businesses (uses GeoLocationand QR scanning) while Tribrs is a Shopify app for online stores. All the Front-End and part ofBack-End was developed by myself being still an active project."]}
+                date="Mar. 2020 - Present"
               />
+              {/* app.tribrs.com */}
             </Grid>
             <Grid item xs={8}>
               <Entry
                 title="Relive | Tech Lead"
-                desc={["Major in Systems, Decision and Control / Minor in Computers, Second Cycle's Average: 17"]}
-                date="2013 - 2018"
-              />
+                desc={["Leading the Tech Department of a Proptech startup aiming to provide a one-stop-shop real state experience. Our main platform is currently in WordPress while having several internal developed apps mainly for CRM and integrations with other agencies (Idealista, Imovirtual...)"]}
+                date="May 2020 - Present"
+              /> {/* relive.pt */}
+            </Grid>
+            <Grid item xs={8}>
+              <Entry
+                title="Muvsy | Founder & Tech Lead"
+                desc={["Company started with the aim of revolutionizing the moving sector by providing an intuitive and simple experience to customers. Built all the Front-End while participating in the product definition. Project currently on standby due to COVID-19 :("]}
+                date="Mar. 2020 - Aug. 2020"
+              /> {/* https://dev-telog.muvsy.com/ */}
             </Grid>
           </Grid>
 
