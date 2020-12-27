@@ -4,15 +4,11 @@ import Grid from "@material-ui/core/Grid"
 import Avatar from '@material-ui/core/Avatar'
 import Chip from '@material-ui/core/Chip'
 
-import icon from '../styles/icons/gatsby.svg'
-import icon2 from '../styles/icons/figma-1.svg'
-import icon3 from '../styles/icons/shopify.svg'
-
 import entryStyles from './entry.module.scss'
 
 const Entry = (props) => {
 
-    const { image, alt, title, desc = [], date, secondBtn } = props
+    const { image, icons = [], alt, title, desc = [], date, secondBtn } = props
 
     return (
         <Grid container justify="center" className={entryStyles.container}>
@@ -68,22 +64,19 @@ const Entry = (props) => {
                 </Grid>
                 <Grid container>
                     <Grid item xs={8} container>
-                        {secondBtn ?
-                            <>
+                        {secondBtn &&
+                            <Grid container style={{ paddingBottom: '16px' }}>
                                 <Button /* className={classes.confirmButton} */ variant="contained" color="primary" /* onClick={() => onClick(data)} */ >
                                     Academic Merit
                                 </Button>
                                 <Button /* className={classes.confirmButton} */ variant="contained" color="secondary" /* onClick={() => onClick(data)} */ >
                                     Msc Dissertation
                                 </Button>
-                            </>
-                            :
-                            <>
-                                <Avatar variant="square" alt="alt asfasf" src={icon} className={entryStyles.stack} />
-                                <Avatar variant="square" alt="alt asfasf" src={icon2} className={entryStyles.stack} />
-                                <Avatar variant="square" alt="alt asfasf" src={icon3} className={entryStyles.stack} />
-                            </>
+                            </Grid>
                         }
+                        {icons.map((icon, i) => <Avatar variant="square" key={i} alt={`${alt} icon ${i}`} src={icon} className={entryStyles.stack} />)}
+
+
                     </Grid>
                     <Grid item xs={4} >
                         <Button /* className={classes.confirmButton} */ variant="contained" color="secondary" /* onClick={() => onClick(data)} */ >

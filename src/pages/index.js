@@ -14,6 +14,43 @@ import Entry from "../components/entry"
 import Card from "../components/card"
 import theme from "../components/theme"
 
+import react from '../styles/icons/react.svg'
+import redux from '../styles/icons/redux.svg'
+import javascript from '../styles/icons/javascript.svg'
+import shopify from '../styles/icons/shopify.svg'
+
+
+import wordpress from '../styles/icons/wordpress.svg'
+import sass from '../styles/icons/sass.svg'
+import rLang from '../styles/icons/r-lang.svg'
+import raspberryPi from '../styles/icons/raspberry-pi.svg'
+import python from '../styles/icons/python.svg'
+import pwa from '../styles/icons/pwa-logo.svg'
+import php from '../styles/icons/php.svg'
+import nodejs from '../styles/icons/nodejs.svg'
+import matlab from '../styles/icons/matlab.svg'
+import materialUi from '../styles/icons/material-ui.svg'
+import graphql from '../styles/icons/graphql.svg'
+import cloudflare from '../styles/icons/cloudflare.svg'
+import aws from '../styles/icons/aws.svg'
+
+import stripe from '../styles/icons/stripe.svg'
+import mongodb from '../styles/icons/mongodb.svg'
+import analytics from '../styles/icons/google-analytics.svg'
+import rails from '../styles/icons/rails.svg'
+import ruby from '../styles/icons/ruby.svg'
+import heroku from '../styles/icons/heroku.svg'
+import drive from '../styles/icons/google-drive.svg'
+import postgresql from '../styles/icons/postgresql.svg'
+import slack from '../styles/icons/slack.svg'
+import mapbox from '../styles/icons/mapbox.svg'
+import antd from '../styles/icons/antd.svg'
+import java from '../styles/icons/java.svg'
+
+import gatsby from '../styles/icons/gatsby.svg'
+import figma from '../styles/icons/figma.svg'
+
+
 
 export default function Home() {
 
@@ -175,6 +212,8 @@ And much more
                 desc={["Associated to the research/development of an outlier detection system from patients with cancer, integrated in project PERSEIDS. A research paper was written."]}
                 date="Oct. 2018 - Feb. 2019"
                 secondBtn
+                alt="Research Grant"
+                icons={[rLang, python, java, javascript]}
               />
                {/* Funded by: Portuguese Foundation for Science and Technology (FCT) */}
                {/* bit.ly/jorgeserras_DBNOD */}
@@ -188,13 +227,17 @@ And much more
                 title="Forall Phones | Front End Developer"
                 desc={["Participated in building everything Front-End associated including an internal stock controller app (Opsify), Shopify Design and internal management apps using websockets for real time sales tracking and analytics. Constant improvement and support to increase Production efficiency by optimizing UX and minimizing time consumption."]}
                 date="April 2019 - April 2020"
+                alt="Forall"
+                icons={[react, redux, antd, javascript, heroku, shopify]}
               /> {/* forallphones.com */}
             </Grid>
             <Grid item xs={8}>
               <Entry
-                title="Nomad | Full Stack Developer"
+                title="Nomad Card City | Full Stack Developer"
                 desc={["Foreign startup with two products aiming at providing cashback rewards for customers through gamification. Nomad Card is a PWA webapp for local businesses (uses GeoLocationand QR scanning) while Tribrs is a Shopify app for online stores. All the Front-End and part ofBack-End was developed by myself being still an active project."]}
                 date="Sep. 2019 - Present"
+                alt="Nomad"
+                icons={[react, materialUi, stripe, pwa, aws, nodejs, mongodb, mapbox, figma]}
               /> 
               {/* app.nomadcard.city */}
             </Grid>
@@ -203,6 +246,8 @@ And much more
                 title="Tribrs | Front End Developer"
                 desc={["Foreign startup with two products aiming at providing cashback rewards for customers through gamification. Nomad Card is a PWA webapp for local businesses (uses GeoLocationand QR scanning) while Tribrs is a Shopify app for online stores. All the Front-End and part ofBack-End was developed by myself being still an active project."]}
                 date="Mar. 2020 - Present"
+                alt="Tribrs"
+                icons={[react, materialUi, stripe, javascript, aws, nodejs, mongodb, shopify, figma]}
               />
               {/* app.tribrs.com */}
             </Grid>
@@ -211,6 +256,8 @@ And much more
                 title="Relive | Tech Lead"
                 desc={["Leading the Tech Department of a Proptech startup aiming to provide a one-stop-shop real state experience. Our main platform is currently in WordPress while having several internal developed apps mainly for CRM and integrations with other agencies (Idealista, Imovirtual...)"]}
                 date="May 2020 - Present"
+                alt="Relive"
+                icons={[wordpress, php, react, materialUi, heroku, postgresql, drive, nodejs, mongodb, javascript, cloudflare, analytics, slack, ruby, rails]}
               /> {/* relive.pt */}
             </Grid>
             <Grid item xs={8}>
@@ -218,6 +265,8 @@ And much more
                 title="Muvsy | Founder & Tech Lead"
                 desc={["Company started with the aim of revolutionizing the moving sector by providing an intuitive and simple experience to customers. Built all the Front-End while participating in the product definition. Project currently on standby due to COVID-19 :("]}
                 date="Mar. 2020 - Aug. 2020"
+                alt="Muvsy"
+                icons={[react, materialUi, heroku, cloudflare, analytics, figma]}
               /> {/* https://dev-telog.muvsy.com/ */}
             </Grid>
           </Grid>
