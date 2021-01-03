@@ -17,7 +17,9 @@ export default createMuiTheme({
         MuiButton: {
             root: {
                 minWidth: '0px',
+                width: '100%',
                 fontFamily: 'Camphor, Open Sans, Segoe UI, sans-serif',
+                textAlign: 'center',
                 borderRadius: '5px',
                 textTransform: 'unset',
                 fontWeight: 700,

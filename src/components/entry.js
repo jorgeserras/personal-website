@@ -8,7 +8,12 @@ import entryStyles from './entry.module.scss'
 
 const Entry = (props) => {
 
-    const { image, icons = [], alt, title, desc = [], date, secondBtn } = props
+    const { image, icons = [], alt, title, desc = [], date,
+        secondBtn,
+        secBtnTxt1 = "",
+        secBtnTxt2 = "",
+        secBtnLnk1 = "",
+        secBtnLnk2 = "", textBtn = "", linkBtn = '#' } = props
 
     return (
         <Grid container justify="center" className={entryStyles.container}>
@@ -65,22 +70,26 @@ const Entry = (props) => {
                 <Grid container>
                     <Grid item xs={8} container>
                         {secondBtn &&
-                            <Grid container style={{ paddingBottom: '16px' }}>
-                                <Button /* className={classes.confirmButton} */ variant="contained" color="primary" /* onClick={() => onClick(data)} */ >
-                                    Academic Merit
-                                </Button>
-                                <Button /* className={classes.confirmButton} */ variant="contained" color="secondary" /* onClick={() => onClick(data)} */ >
-                                    Msc Dissertation
-                                </Button>
+                            <Grid container spacing={1} style={{ paddingBottom: '16px' }}>
+                                <Grid item xs={5}>
+                                    <Button href={secBtnLnk1} target="_blank" variant="contained" color="primary">
+                                        {secBtnTxt1}
+                                    </Button>
+                                </Grid>
+                                <Grid item xs={5}>
+                                    <Button href={secBtnLnk2} target="_blank" variant="contained" color="secondary">
+                                        {secBtnTxt2}
+                                    </Button>
+                                </Grid>
                             </Grid>
                         }
                         {icons.map((icon, i) => <Avatar variant="square" key={i} alt={`${alt} icon ${i}`} src={icon} className={entryStyles.stack} />)}
 
 
                     </Grid>
-                    <Grid item xs={4} >
-                        <Button /* className={classes.confirmButton} */ variant="contained" color="secondary" /* onClick={() => onClick(data)} */ >
-                            Instituto Superior Técnico
+                    <Grid item xs={4}>
+                        <Button href={linkBtn} target="_blank" variant="contained" color="primary">
+                            {textBtn}
                         </Button>
                     </Grid>
                 </Grid>

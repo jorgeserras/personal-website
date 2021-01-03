@@ -158,6 +158,10 @@ export default function Home() {
                 title="IST | Master's Degree in Electrical and Computers Engineering"
                 desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17", "MSc Dissertation mark: 19"]}
                 date="2013 - 2018"
+                secBtnTxt1 = "Academic Merit"
+                secBtnTxt2 = "Msc Dissertation"
+                secBtnLnk1 = "https://bit.ly/academic_merit"
+                secBtnLnk2 = "https://bit.ly/jorgeserras_dissertation"
                 secondBtn
               />
             </Grid>
@@ -212,8 +216,14 @@ And much more
                 desc={["Associated to the research/development of an outlier detection system from patients with cancer, integrated in project PERSEIDS. A research paper was written."]}
                 date="Oct. 2018 - Feb. 2019"
                 secondBtn
+                secBtnTxt1 = "Project code"
+                secBtnTxt2 = "METEOR app"
+                secBtnLnk1 = "https://bit.ly/DBNMeteor"
+                secBtnLnk2 = "https://bit.ly/jorgeserras_DBNOD"
                 alt="Research Grant"
                 icons={[rLang, python, java, javascript]}
+                textBtn="INESC-ID Website"
+                linkBtn="https://inesc-id.pt"
               />
                {/* Funded by: Portuguese Foundation for Science and Technology (FCT) */}
                {/* bit.ly/jorgeserras_DBNOD */}
@@ -229,7 +239,9 @@ And much more
                 date="April 2019 - April 2020"
                 alt="Forall"
                 icons={[react, redux, antd, javascript, heroku, shopify]}
-              /> {/* forallphones.com */}
+                textBtn="Forall Website"
+                linkBtn="https://forallphones.com"
+              />
             </Grid>
             <Grid item xs={8}>
               <Entry
@@ -238,8 +250,9 @@ And much more
                 date="Sep. 2019 - Present"
                 alt="Nomad"
                 icons={[react, materialUi, stripe, pwa, aws, nodejs, mongodb, mapbox, figma]}
+                textBtn="Nomad app"
+                linkBtn="https://app.nomadcard.city"
               /> 
-              {/* app.nomadcard.city */}
             </Grid>
             <Grid item xs={8}>
               <Entry
@@ -248,8 +261,9 @@ And much more
                 date="Mar. 2020 - Present"
                 alt="Tribrs"
                 icons={[react, materialUi, stripe, javascript, aws, nodejs, mongodb, shopify, figma]}
+                textBtn="Tribrs app"
+                linkBtn="https://app.tribrs.com"
               />
-              {/* app.tribrs.com */}
             </Grid>
             <Grid item xs={8}>
               <Entry
@@ -258,7 +272,9 @@ And much more
                 date="May 2020 - Present"
                 alt="Relive"
                 icons={[wordpress, php, react, materialUi, heroku, postgresql, drive, nodejs, mongodb, javascript, cloudflare, analytics, slack, ruby, rails]}
-              /> {/* relive.pt */}
+                textBtn="Relive website"
+                linkBtn="https://relive.pt"
+              />
             </Grid>
             <Grid item xs={8}>
               <Entry
@@ -267,7 +283,9 @@ And much more
                 date="Mar. 2020 - Aug. 2020"
                 alt="Muvsy"
                 icons={[react, materialUi, heroku, cloudflare, analytics, figma]}
-              /> {/* https://dev-telog.muvsy.com/ */}
+                textBtn="Muvsy Dev website"
+                linkBtn="https://dev-telog.muvsy.com"
+              />
             </Grid>
           </Grid>
 
