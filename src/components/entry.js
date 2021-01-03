@@ -8,18 +8,28 @@ import entryStyles from './entry.module.scss'
 
 const Entry = (props) => {
 
-    const { image, icons = [], alt, title, desc = [], date,
+    const {
+        image,
+        icons = [],
+        alt,
+        title,
+        desc = [],
+        date,
+        tags = [],
         secondBtn,
         secBtnTxt1 = "",
         secBtnTxt2 = "",
         secBtnLnk1 = "",
-        secBtnLnk2 = "", textBtn = "", linkBtn = '#' } = props
+        secBtnLnk2 = "",
+        textBtn = "",
+        linkBtn = '#'
+    } = props
 
     return (
         <Grid container justify="center" className={entryStyles.container}>
             <Grid item xs={1} /* sm={1} */>
                 <Grid container className={entryStyles.avatarContainer} >
-                    <Avatar alt={alt} src={image} className={entryStyles.avatar}>
+                    <Avatar variant="rounded" alt={alt || title} src={image} className={entryStyles.avatar}>
                         {" "}
                     </Avatar>
                 </Grid>
@@ -40,31 +50,12 @@ const Entry = (props) => {
                         )}
                     </Grid>
                     <Grid item xs={4} >
-                        <Chip
+                        {tags.map(t => <Chip
+                            key={title + " " + t.label}
                             /* avatar={<Avatar alt="Natacha" src={icon} />} */
-                            label="Production"
+                            label={t.label}
                             variant="outlined"
-                        />
-                        <Chip
-                            /* avatar={<Avatar alt="Natacha" src={icon} />} */
-                            label="Refurbished"
-                            variant="outlined"
-                        />
-                        <Chip
-                            /* avatar={<Avatar alt="Natacha" src={icon} />} */
-                            label="Phones"
-                            variant="outlined"
-                        />
-                        <Chip
-                            /* avatar={<Avatar alt="Natacha" src={icon} />} */
-                            label="Assembly Line"
-                            variant="outlined"
-                        />
-                        <Chip
-                            /* avatar={<Avatar alt="Natacha" src={icon} />} */
-                            label="Industry"
-                            variant="outlined"
-                        />
+                        />)}
                     </Grid>
                 </Grid>
                 <Grid container>
@@ -72,26 +63,26 @@ const Entry = (props) => {
                         {secondBtn &&
                             <Grid container spacing={1} style={{ paddingBottom: '16px' }}>
                                 <Grid item xs={5}>
-                                    <Button href={secBtnLnk1} target="_blank" variant="contained" color="primary">
+                                    <Button href={secBtnLnk1} target="_blank" fullWidth variant="contained" color="primary">
                                         {secBtnTxt1}
                                     </Button>
                                 </Grid>
                                 <Grid item xs={5}>
-                                    <Button href={secBtnLnk2} target="_blank" variant="contained" color="secondary">
+                                    <Button href={secBtnLnk2} target="_blank" fullWidth variant="contained" color="secondary">
                                         {secBtnTxt2}
                                     </Button>
                                 </Grid>
                             </Grid>
                         }
                         {icons.map((icon, i) => <Avatar variant="square" key={i} alt={`${alt} icon ${i}`} src={icon} className={entryStyles.stack} />)}
-
-
                     </Grid>
-                    <Grid item xs={4}>
-                        <Button href={linkBtn} target="_blank" variant="contained" color="primary">
-                            {textBtn}
-                        </Button>
-                    </Grid>
+                    {textBtn &&
+                        <Grid item xs={4}>
+                            <Button href={linkBtn} target="_blank" fullWidth variant="contained" color="primary">
+                                {textBtn}
+                            </Button>
+                        </Grid>
+                    }
                 </Grid>
             </Grid>
         </Grid>

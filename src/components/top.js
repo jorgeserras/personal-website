@@ -92,7 +92,7 @@ const Top = () => {
                 ))}
                 <p>Front End / Back End / Machine Learning / Electronics</p>
                 <br />
-                <Button variant="contained" color="secondary">Contact me</Button>
+                <Button variant="contained" color="secondary" maxWidth="360px">Contact me</Button>
             </Grid>
 
 

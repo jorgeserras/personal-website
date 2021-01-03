@@ -1,8 +1,7 @@
 import React from "react"
-import { Link } from 'gatsby'
 /* import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar'; */
-import Grid from '@material-ui/core/Grid';
+import Grid from '@material-ui/core/Grid'
 import { MuiThemeProvider } from "@material-ui/core/styles"
 import Layout from "../components/layout"
 import Head from "../components/head"
@@ -19,18 +18,17 @@ import redux from '../styles/icons/redux.svg'
 import javascript from '../styles/icons/javascript.svg'
 import shopify from '../styles/icons/shopify.svg'
 
-
 import wordpress from '../styles/icons/wordpress.svg'
-import sass from '../styles/icons/sass.svg'
+/* import sass from '../styles/icons/sass.svg' */
 import rLang from '../styles/icons/r-lang.svg'
-import raspberryPi from '../styles/icons/raspberry-pi.svg'
+/* import raspberryPi from '../styles/icons/raspberry-pi.svg' */
 import python from '../styles/icons/python.svg'
 import pwa from '../styles/icons/pwa-logo.svg'
 import php from '../styles/icons/php.svg'
 import nodejs from '../styles/icons/nodejs.svg'
-import matlab from '../styles/icons/matlab.svg'
+/* import matlab from '../styles/icons/matlab.svg' */
 import materialUi from '../styles/icons/material-ui.svg'
-import graphql from '../styles/icons/graphql.svg'
+/* import graphql from '../styles/icons/graphql.svg' */
 import cloudflare from '../styles/icons/cloudflare.svg'
 import aws from '../styles/icons/aws.svg'
 
@@ -47,9 +45,12 @@ import mapbox from '../styles/icons/mapbox.svg'
 import antd from '../styles/icons/antd.svg'
 import java from '../styles/icons/java.svg'
 
-import gatsby from '../styles/icons/gatsby.svg'
+/* import gatsby from '../styles/icons/gatsby.svg' */
 import figma from '../styles/icons/figma.svg'
 
+import forall from '../styles/imgs/small_f.jpg'
+import ist from '../styles/imgs/ist_small.jpg'
+import inesc from '../styles/imgs/INESC-ID.png'
 
 
 export default function Home() {
@@ -163,6 +164,7 @@ export default function Home() {
                 secBtnLnk1 = "https://bit.ly/academic_merit"
                 secBtnLnk2 = "https://bit.ly/jorgeserras_dissertation"
                 secondBtn
+                image={ist}
               />
             </Grid>
             {/* Academic Merit/Excellence: bit.ly/academic_merit */}
@@ -182,6 +184,7 @@ export default function Home() {
                 title="Web Development"
                 desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
                 date="2013 - 2018"
+                image={react}
               />
             </Grid>
             <Grid item xs={8}>
@@ -238,9 +241,13 @@ And much more
                 desc={["Participated in building everything Front-End associated including an internal stock controller app (Opsify), Shopify Design and internal management apps using websockets for real time sales tracking and analytics. Constant improvement and support to increase Production efficiency by optimizing UX and minimizing time consumption."]}
                 date="April 2019 - April 2020"
                 alt="Forall"
+                tags={[
+                  {label: "Refurbished"}, {label: "Phones"}, {label: "Assembly Line"}, {label: "Industry"}, {label: "Production"}
+                ]}
                 icons={[react, redux, antd, javascript, heroku, shopify]}
                 textBtn="Forall Website"
                 linkBtn="https://forallphones.com"
+                image={forall}
               />
             </Grid>
             <Grid item xs={8}>
