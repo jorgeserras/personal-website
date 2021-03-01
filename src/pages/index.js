@@ -50,8 +50,14 @@ import figma from '../styles/icons/figma.svg'
 
 import forall from '../styles/imgs/small_f.jpg'
 import ist from '../styles/imgs/ist_small.jpg'
-import inesc from '../styles/imgs/INESC-ID.png'
-
+// import inesc from '../styles/imgs/INESC-ID.png'
+import it from '../styles/imgs/it.jpg'
+import nomad from '../styles/imgs/nomad.png'
+import tribrs from '../styles/imgs/tribrs.jpg'
+import muvsy from '../styles/imgs/muvsy.png'
+import relive from '../styles/imgs/relive.jpg'
+import machineLearning from '../styles/imgs/machineLearning.png'
+import managment from '../styles/imgs/managment.jpg'
 
 export default function Home() {
 
@@ -183,7 +189,7 @@ export default function Home() {
               <Entry
                 title="Web Development"
                 desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
-                date="2013 - 2018"
+                date=""
                 image={react}
               />
             </Grid>
@@ -191,14 +197,16 @@ export default function Home() {
               <Entry
                 title="Machine Learning | Data Science"
                 desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
-                date="2013 - 2018"
+                date=""
+                image={machineLearning}
               />
             </Grid>
             <Grid item xs={8}>
               <Entry
-                title="Management"
+                title="Team & Project Management"
                 desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
-                date="2013 - 2018"
+                date=""
+                image={managment}
               />
             </Grid>
             {/* 
@@ -222,11 +230,12 @@ And much more
                 secBtnTxt1 = "Project code"
                 secBtnTxt2 = "METEOR app"
                 secBtnLnk1 = "https://bit.ly/DBNMeteor"
-                secBtnLnk2 = "https://bit.ly/jorgeserras_DBNOD"
+                secBtnLnk2 = "https://meteor.jorgeserras.com/"
                 alt="Research Grant"
                 icons={[rLang, python, java, javascript]}
-                textBtn="INESC-ID Website"
-                linkBtn="https://inesc-id.pt"
+                textBtn="Research Article"
+                linkBtn="https://doi.org/10.3390/app11041955"
+                image={it}
               />
                {/* Funded by: Portuguese Foundation for Science and Technology (FCT) */}
                {/* bit.ly/jorgeserras_DBNOD */}
@@ -259,6 +268,7 @@ And much more
                 icons={[react, materialUi, stripe, pwa, aws, nodejs, mongodb, mapbox, figma]}
                 textBtn="Nomad app"
                 linkBtn="https://app.nomadcard.city"
+                image={nomad}
               /> 
             </Grid>
             <Grid item xs={8}>
@@ -270,6 +280,7 @@ And much more
                 icons={[react, materialUi, stripe, javascript, aws, nodejs, mongodb, shopify, figma]}
                 textBtn="Tribrs app"
                 linkBtn="https://app.tribrs.com"
+                image={tribrs}
               />
             </Grid>
             <Grid item xs={8}>
@@ -281,6 +292,7 @@ And much more
                 icons={[wordpress, php, react, materialUi, heroku, postgresql, drive, nodejs, mongodb, javascript, cloudflare, analytics, slack, ruby, rails]}
                 textBtn="Relive website"
                 linkBtn="https://relive.pt"
+                image={relive}
               />
             </Grid>
             <Grid item xs={8}>
@@ -292,6 +304,7 @@ And much more
                 icons={[react, materialUi, heroku, cloudflare, analytics, figma]}
                 textBtn="Muvsy Dev website"
                 linkBtn="https://dev-telog.muvsy.com"
+                image={muvsy}
               />
             </Grid>
           </Grid>
