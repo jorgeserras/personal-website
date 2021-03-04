@@ -110,8 +110,7 @@ const Top = () => {
                 <Button variant="contained" color="secondary" maxWidth="360px">Contact me</Button>
             </Grid>
 
-
-            {width === 'xs' || width === 'xl' || width === 'sm' ? 
+            {width === 'xs' || width === 'sm' ? 
                 null
              :
                 <Grid item xs={6} /* class="container" */>
