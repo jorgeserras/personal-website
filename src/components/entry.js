@@ -64,12 +64,12 @@ const Entry = (props) => {
                     <Grid item xs={8} container>
                         {secondBtn &&
                             <Grid container spacing={1} style={{ paddingBottom: '16px' }}>
-                                <Grid item container xs={12} md={5} justify="center">
+                                <Grid item container xs={12} md={5}>
                                     <Button href={secBtnLnk1} className={entryStyles.btn} target="_blank" fullWidth variant="contained" color="primary">
                                         {secBtnTxt1}
                                     </Button>
                                 </Grid>
-                                <Grid item container xs={12} md={5} justify="center">
+                                <Grid item container xs={12} md={5}>
                                     <Button href={secBtnLnk2} className={entryStyles.btn} target="_blank" fullWidth variant="contained" color="secondary">
                                         {secBtnTxt2}
                                     </Button>
