@@ -64,13 +64,13 @@ const Entry = (props) => {
                     <Grid item xs={8} container>
                         {secondBtn &&
                             <Grid container spacing={1} style={{ paddingBottom: '16px' }}>
-                                <Grid item xs={12} md={6}>
-                                    <Button href={secBtnLnk1} target="_blank" fullWidth variant="contained" color="primary">
+                                <Grid item container xs={12} md={5} justify="center">
+                                    <Button href={secBtnLnk1} className={entryStyles.btn} target="_blank" fullWidth variant="contained" color="primary">
                                         {secBtnTxt1}
                                     </Button>
                                 </Grid>
-                                <Grid item xs={12} md={6}>
-                                    <Button href={secBtnLnk2} target="_blank" fullWidth variant="contained" color="secondary">
+                                <Grid item container xs={12} md={5} justify="center">
+                                    <Button href={secBtnLnk2} className={entryStyles.btn} target="_blank" fullWidth variant="contained" color="secondary">
                                         {secBtnTxt2}
                                     </Button>
                                 </Grid>
@@ -79,8 +79,8 @@ const Entry = (props) => {
                         {icons.map((icon, i) => <Avatar variant="square" key={i} alt={`${alt} icon ${i}`} src={icon} className={entryStyles.stack} />)}
                     </Grid>
                     {textBtn &&
-                        <Grid item xs={4}>
-                            <Button href={linkBtn} target="_blank" fullWidth variant="contained" color="primary">
+                        <Grid container item xs={4} justify="flex-end">
+                            <Button href={linkBtn} className={entryStyles.btn} target="_blank" fullWidth variant="contained" color="primary">
                                 {textBtn}
                             </Button>
                         </Grid>

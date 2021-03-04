@@ -26,6 +26,7 @@ export default createMuiTheme({
                 textAlign: 'center',
                 borderRadius: '5px',
                 textTransform: 'unset',
+                height: 'fit-content',
                 fontWeight: 700,
                 padding: '12px 32px'
             },
