@@ -3,7 +3,8 @@
 }
 
 .title, .time {
-    margin: 0
+    margin: 0;
+    font-size: 1.2em;
 }
 
 .time {
@@ -19,7 +20,16 @@
     }
 }
 
-.avatar {
-    width: 60px !important;
-    height: 60px !important;
+.titleContainer {
+    padding-left: 16px;
+}
+
+@media only screen and (min-width: 960px) {
+    .avatar {
+        width: 60px !important; /* 60px */
+        height: 60px !important; /* 60px */
+    }
+    .title {
+        font-size: 1.5em;
+    }
 }

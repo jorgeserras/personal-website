@@ -1,4 +1,4 @@
-import React from "react"
+import React, { lazy, Suspense } from 'react'
 /* import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar'; */
 import Grid from '@material-ui/core/Grid'
@@ -6,9 +6,9 @@ import { MuiThemeProvider } from "@material-ui/core/styles"
 import Layout from "../components/layout"
 import Head from "../components/head"
 import FloatCard from "../components/drawer"
-
 import '../styles/index.scss'
-import Top from "../components/top"
+/* import Top from "../components/top" */
+
 import Entry from "../components/entry"
 import Card from "../components/card"
 import theme from "../components/theme"
@@ -59,6 +59,8 @@ import relive from '../styles/imgs/relive.jpg'
 import machineLearning from '../styles/imgs/machineLearning.png'
 import managment from '../styles/imgs/managment.jpg'
 
+const Top = lazy(() => import('../components/top'))
+
 export default function Home() {
 
   return <MuiThemeProvider theme={theme}>
@@ -88,7 +90,9 @@ export default function Home() {
       </CardActions>
     </Card> */}
 
-      <Top />
+        <Suspense fallback={<></>}>
+          <Top />
+        </Suspense>
 
       <div class="relative -mt-12 lg:-mt-24">
         <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" style={{ display: 'block', verticalAlign: 'middle' }}>
@@ -105,20 +109,18 @@ export default function Home() {
         </svg>
       </div>
 
-      <div style={{ display: 'flex' }}>
-
+      <div className="main-container">
 
         <FloatCard />
-
 
         <main className="content" /* style={{ height: '50vh' }} */>
 
           <Grid container justify="center" className="container-entries">
-            <Grid item xs={8}>
+            <Grid item xs={10}>
               <h1>Profile</h1>
             </Grid>
-            <Grid item container xs={8}>
-              <Grid item xs={4}>
+            <Grid item container xs={10}>
+              <Grid item xs={12} md={4}>
                 <Card
                   title="About me"
                   desc="DIY Enthusiast | Entrepeneur"
@@ -136,7 +138,7 @@ export default function Home() {
 
                 */}
               </Grid>
-              <Grid item xs={4}>
+              <Grid item xs={12} md={4}>
                 <Card
                   title="Interests"
                   desc="Tech | Art | Culture"
@@ -147,7 +149,7 @@ export default function Home() {
                   In my opinion, the best way to express ourselves is through music, which became a part of my life since little."
                 />
               </Grid>
-              <Grid item xs={4}>
+              <Grid item xs={12} md={4}>
                 <Card
                   title="Hobbies"
                   desc="Music | Programming | Gaming"
@@ -156,10 +158,10 @@ export default function Home() {
                 />
               </Grid>
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={10}>
               <h1>Education</h1>
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={12} lg={10}>
               {/* Simbolo do Ist e link para site do IST */}
               <Entry
                 title="IST | Master's Degree in Electrical and Computers Engineering"
@@ -182,10 +184,10 @@ export default function Home() {
  "Always find time to enhance your skills through self learning"
   */}
 
-            <Grid item xs={8}>
+            <Grid item xs={10}>
               <h1>Main Skills</h1>
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Web Development"
                 desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
@@ -193,7 +195,7 @@ export default function Home() {
                 image={react}
               />
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Machine Learning | Data Science"
                 desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
@@ -201,7 +203,7 @@ export default function Home() {
                 image={machineLearning}
               />
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Team & Project Management"
                 desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
@@ -218,10 +220,10 @@ And much more
 */}
 
 
-            <Grid item xs={8}>
+            <Grid item xs={10}>
               <h1>Main Experience</h1>
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Telecomunications Institute | Research Grant"
                 desc={["Associated to the research/development of an outlier detection system from patients with cancer, integrated in project PERSEIDS. A research paper was written."]}
@@ -244,7 +246,7 @@ And much more
                {/* Maybe more things like those on old site */}
 
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Forall Phones | Front End Developer"
                 desc={["Participated in building everything Front-End associated including an internal stock controller app (Opsify), Shopify Design and internal management apps using websockets for real time sales tracking and analytics. Constant improvement and support to increase Production efficiency by optimizing UX and minimizing time consumption."]}
@@ -259,7 +261,7 @@ And much more
                 image={forall}
               />
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Nomad Card City | Full Stack Developer"
                 desc={["Foreign startup with two products aiming at providing cashback rewards for customers through gamification. Nomad Card is a PWA webapp for local businesses (uses GeoLocationand QR scanning) while Tribrs is a Shopify app for online stores. All the Front-End and part ofBack-End was developed by myself being still an active project."]}
@@ -271,7 +273,7 @@ And much more
                 image={nomad}
               /> 
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Tribrs | Front End Developer"
                 desc={["Foreign startup with two products aiming at providing cashback rewards for customers through gamification. Nomad Card is a PWA webapp for local businesses (uses GeoLocationand QR scanning) while Tribrs is a Shopify app for online stores. All the Front-End and part ofBack-End was developed by myself being still an active project."]}
@@ -283,7 +285,7 @@ And much more
                 image={tribrs}
               />
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Relive | Tech Lead"
                 desc={["Leading the Tech Department of a Proptech startup aiming to provide a one-stop-shop real state experience. Our main platform is currently in WordPress while having several internal developed apps mainly for CRM and integrations with other agencies (Idealista, Imovirtual...)"]}
@@ -295,7 +297,7 @@ And much more
                 image={relive}
               />
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Muvsy | Founder & Tech Lead"
                 desc={["Company started with the aim of revolutionizing the moving sector by providing an intuitive and simple experience to customers. Built all the Front-End while participating in the product definition. Project currently on standby due to COVID-19 :("]}

@@ -34,16 +34,18 @@ const Entry = (props) => {
                     </Avatar>
                 </Grid>
             </Grid>
-            <Grid item xs={11} /* sm={8} */>
-                <Grid container alignItems="center">
-                    <Grid item xs={8}>
+            <Grid item xs={11} /* sm={8} */ className={entryStyles.titleContainer}>
+                <Grid container spacing={2} alignItems="center">
+                    <Grid item xs={date ? 9 : 12}>
                         <h2 className={entryStyles.title}>{title}</h2>
                     </Grid>
-                    <Grid item xs={4} >
-                        <h3 className={entryStyles.time}>{date}</h3>
-                    </Grid>
+                    {date &&
+                        <Grid item xs={3}>
+                            <h3 className={entryStyles.time}>{date}</h3>
+                        </Grid>
+                    }
                 </Grid>
-                <Grid container>
+                <Grid container spacing={2}>
                     <Grid item xs={8} >
                         {desc.map((d, i) =>
                             <p key={i} className={entryStyles.description}>{d}</p>
@@ -58,16 +60,16 @@ const Entry = (props) => {
                         />)}
                     </Grid>
                 </Grid>
-                <Grid container>
+                <Grid container spacing={2}>
                     <Grid item xs={8} container>
                         {secondBtn &&
                             <Grid container spacing={1} style={{ paddingBottom: '16px' }}>
-                                <Grid item xs={5}>
+                                <Grid item xs={12} md={6}>
                                     <Button href={secBtnLnk1} target="_blank" fullWidth variant="contained" color="primary">
                                         {secBtnTxt1}
                                     </Button>
                                 </Grid>
-                                <Grid item xs={5}>
+                                <Grid item xs={12} md={6}>
                                     <Button href={secBtnLnk2} target="_blank" fullWidth variant="contained" color="secondary">
                                         {secBtnTxt2}
                                     </Button>

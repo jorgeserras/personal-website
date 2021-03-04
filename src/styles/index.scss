@@ -22,10 +22,18 @@ body {
     line-height: 80px;
   }
 
+
+@media only screen and (min-width: 960px) {
+    .main-container {
+        display: flex;
+    }
+}
+
+
 .content {
     background-color: #fff;
     flex-grow: 1;
-    padding: 18px
+    /* padding: 18px */
 }
 
 .container-entries {

@@ -20,6 +20,9 @@ const drawerWidth = 250
 const useStyles = makeStyles((theme) => ({
   drawer: {
     width: drawerWidth,
+    [theme.breakpoints.down('sm')]: {
+      width: 'unset',
+    },
     backgroundColor: '#fff',
     flexShrink: 0,
   },
@@ -32,9 +35,16 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1, 0)
   },
   btn: {
-    marginTop: theme.spacing(1)
+    /* marginTop: theme.spacing(1) */
   },
   drawerPaper: {
+    [theme.breakpoints.down('sm')]: {
+      position: 'unset',
+      width: '100%',
+      borderRight: 'none',
+      padding: '0',
+      margin: '0 auto'
+    },
     boxShadow: '0 14px 26px -12px #4AD295, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 10px 12px -7px rgba(54, 244, 191, 0.3)',
     width: drawerWidth,
     top: '35%',
@@ -119,22 +129,28 @@ const FloatCard = ({ title }) => {
             </Avatar>
           </a>
         </Grid>
-        <p className={classes.desc}>I'm constantly engaging in new projects and ideas to enhance myself and others around me. Interested in remodeling a business or create something unique?</p>
-        <Chip
-          className={classes.chip}
-          color="primary"
-          icon={<PlaceIcon />}
-          label="Lisbon, Portugal"
-          variant="outlined"
-        />
-
-        <Button className={classes.btn} variant="contained" color="primary">Download CV</Button>
-        {/*             <Chip
-                            avatar={<Avatar alt="Natacha" src={icon} />}
-                            label="Production"
-                            variant="outlined"
-                        /> */}
-
+        <Grid container>
+          <p className={classes.desc}>I'm constantly engaging in new projects and ideas to enhance myself and others around me. Interested in remodeling a business or create something unique?</p>
+        </Grid>
+        <Grid container spacing={2} justify='center' alignItems='center'>
+          <Grid item xs={6} md={12}>
+            <Chip
+              className={classes.chip}
+              color="primary"
+              icon={<PlaceIcon />}
+              label="Lisbon, Portugal"
+              variant="outlined"
+            />
+          </Grid>
+          <Grid item xs={6} md={12}>
+            <Button className={classes.btn} variant="contained" color="primary">Download CV</Button>
+            {/*             <Chip
+                                avatar={<Avatar alt="Natacha" src={icon} />}
+                                label="Production"
+                                variant="outlined"
+                            /> */}
+          </Grid>
+        </Grid>
         {/* </Grid> */}
 
       </div>
