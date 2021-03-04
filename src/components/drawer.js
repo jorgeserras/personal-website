@@ -27,6 +27,9 @@ const useStyles = makeStyles((theme) => ({
     flexShrink: 0,
   },
   desc: {
+    [theme.breakpoints.down('sm')]: {
+      display: 'none'
+    },
     margin: theme.spacing(1, 0),
     fontSize: '0.9em',
     textAlign: 'left'
@@ -35,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1, 0)
   },
   btn: {
-    /* marginTop: theme.spacing(1) */
+    marginTop: theme.spacing(1)
   },
   drawerPaper: {
     [theme.breakpoints.down('sm')]: {
@@ -107,6 +110,13 @@ const FloatCard = ({ title }) => {
         <h4>Electrical Engineer</h4>
         <h4>FullStack Developer</h4>
         <h4>FreeLancer</h4>
+        <Chip
+              className={classes.chip}
+              color="primary"
+              icon={<PlaceIcon />}
+              label="Lisbon, Portugal"
+              variant="outlined"
+        />
         <Grid container justify="center" className={classes.social}>
           <a alt="Linkedin" rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/jorgeserras/">
             <Avatar alt="LinkedIn" className={classes.icon}>
@@ -130,29 +140,13 @@ const FloatCard = ({ title }) => {
           </a>
         </Grid>
         <Grid container>
-          <p className={classes.desc}>I'm constantly engaging in new projects and ideas to enhance myself and others around me. Interested in remodeling a business or create something unique?</p>
+            <p className={classes.desc}>
+              I'm constantly engaging in new projects and ideas to enhance myself and others around me. Interested in remodeling a business or create something unique?
+            </p>
         </Grid>
-        <Grid container spacing={2} justify='center' alignItems='center'>
-          <Grid item xs={6} md={12}>
-            <Chip
-              className={classes.chip}
-              color="primary"
-              icon={<PlaceIcon />}
-              label="Lisbon, Portugal"
-              variant="outlined"
-            />
-          </Grid>
-          <Grid item xs={6} md={12}>
+        <Grid container justify='center'>
             <Button className={classes.btn} variant="contained" color="primary">Download CV</Button>
-            {/*             <Chip
-                                avatar={<Avatar alt="Natacha" src={icon} />}
-                                label="Production"
-                                variant="outlined"
-                            /> */}
-          </Grid>
         </Grid>
-        {/* </Grid> */}
-
       </div>
     </Drawer>
   )
