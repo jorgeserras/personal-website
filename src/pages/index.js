@@ -117,16 +117,15 @@ export default function Home() {
 
           <Grid container justify="center" className="container-entries">
             <Grid item xs={10}>
-              <h1>Profile</h1>
+              <h1>About me</h1>
             </Grid>
-            <Grid item container xs={10}>
-              <Grid item xs={12} md={4}>
+            <Grid item container xs={10} justify="space-between">
+              <Grid item xs={12} md={6} xl={4}>
                 <Card
                   title="About me"
-                  desc="DIY Enthusiast | Entrepeneur"
-                  text="I finished my Master's Degree in Electrical and Computers Engineering at IST with focus on Control and Decision systems. My dissertation falls in Machine Learning, more specifically in the development of a complete system for Anomaly detection in multivariate time series. The latter is known as METEOR and can be accessed freely.
-                  I always have active personal projects and hobbies to improve other skills outside work's scope. 
-                  Love building new things from scratch, from working with arduinos and electronic components to programming Back-end and Front-end applications.
+                  desc="I finished my Master's Degree in Electrical and Computers Engineering on Control and Decision systems. My dissertation falls in Machine Learning, more specifically in the development of a complete system for Anomaly detection in multivariate time series. The latter is known as METEOR and can be accessed freely.
+                  I always have active personal projects and hobbies to improve other skills outside work's scope."
+                  text="Love building new things from scratch, from working with arduinos and electronic components to programming web apps.
                   I like everything associated to Engineering and I'm passionate for History and Geography.
                   I consider myself a fast learner, learning by doing and researching about the subject independently. "
                 />
@@ -138,23 +137,17 @@ export default function Home() {
 
                 */}
               </Grid>
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} md={6} xl={4}>
                 <Card
                   title="Interests"
-                  desc="Tech | Art | Culture"
-                  text="I'm always interested in finding better ways of doing not only my work but anything else around me, most of the times by automating processes.
+                  desc="I'm always interested in finding better ways of doing not only my work but anything else around me, most of the times by automating processes.
                   Sometimes the secret is on improving existing features than introducing new ones.
                   When handling any problem, I always try to find every solution possible and its outcomes.
-                  Never discard a book by its cover. I've always had a passion for philosofy and culture, finding myself many times reading and learning about history and foreign tales.
+                  I've always had a passion for philosophy and culture, finding myself many times reading and learning about history and foreign tales.
                   In my opinion, the best way to express ourselves is through music, which became a part of my life since little."
-                />
-              </Grid>
-              <Grid item xs={12} md={4}>
-                <Card
-                  title="Hobbies"
-                  desc="Music | Programming | Gaming"
                   text="Most of my free time I spent programming my own projects and ideas as well as studying novelty subjects, keeping up to date with the ever changing world.
-                  Since little that I love gaming and music, which are the main ways I recharge my energy."
+                  Since little that I love gaming and music, which are the main ways I recharge my energy.
+                  "
                 />
               </Grid>
             </Grid>

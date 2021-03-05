@@ -109,6 +109,7 @@ const FloatCard = ({ title }) => {
         <h2>Jorge Serras</h2>
         <h4>Electrical Engineer</h4>
         <h4>FullStack Developer</h4>
+        <h4>Entrepeneur</h4>
         <h4>FreeLancer</h4>
         <Chip
               className={classes.chip}

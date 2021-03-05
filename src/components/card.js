@@ -19,11 +19,11 @@ const Card = (props) => {
             <Grid item xs={12} align="center">
                 <h2 className={entryStyles.title}>{title}</h2>
             </Grid>
-            <Grid item xs={12} align="center">
-                <h3 className={entryStyles.time}>{desc}</h3>
+            <Grid item xs={12}>
+                <p /* className={entryStyles.time} */>{desc}</p>
             </Grid>
             <Grid item xs={12}>
-                <p className={entryStyles.time}>{text}</p>
+                <p /* className={entryStyles.time} */>{text}</p>
             </Grid>
             {/* <Grid item xs={1} >
                 <Grid container className={entryStyles.avatarContainer} >
