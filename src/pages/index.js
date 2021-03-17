@@ -10,7 +10,7 @@ import '../styles/index.scss'
 /* import Top from "../components/top" */
 
 import Entry from "../components/entry"
-import Card from "../components/card"
+/* import Card from "../components/card" */
 import theme from "../components/theme"
 
 import react from '../styles/icons/react.svg'
@@ -120,15 +120,23 @@ export default function Home() {
               <h1>About me</h1>
             </Grid>
             <Grid item container xs={10} justify="space-between">
-              <Grid item xs={12} md={6} xl={4}>
-                <Card
+              <Grid item xs={12} sm={12}>
+                <Entry
+                  title="About me"
+                  desc={["I finished my Master's Degree in Electrical and Computers Engineering on Control and Decision systems. My dissertation falls in Machine Learning, more specifically in the development of a complete system for Anomaly detection in multivariate time series. The latter is known as METEOR and can be accessed freely. I always have active personal projects and hobbies to improve other skills outside work's scope.",
+                   "Love building new things from scratch, from working with arduinos and electronic components to programming web apps. I like everything associated to Engineering and I'm passionate for History and Geography. I consider myself a fast learner, learning by doing and researching about the subject independently."]}
+                  date=""
+                  altV
+                  /* image={react} */
+                />
+                {/* <Card
                   title="About me"
                   desc="I finished my Master's Degree in Electrical and Computers Engineering on Control and Decision systems. My dissertation falls in Machine Learning, more specifically in the development of a complete system for Anomaly detection in multivariate time series. The latter is known as METEOR and can be accessed freely.
                   I always have active personal projects and hobbies to improve other skills outside work's scope."
                   text="Love building new things from scratch, from working with arduinos and electronic components to programming web apps.
                   I like everything associated to Engineering and I'm passionate for History and Geography.
                   I consider myself a fast learner, learning by doing and researching about the subject independently. "
-                />
+                /> */}
                 {/* 
                 
                 - Portuguese
@@ -137,8 +145,16 @@ export default function Home() {
 
                 */}
               </Grid>
-              <Grid item xs={12} md={6} xl={4}>
-                <Card
+              <Grid item xs={12} sm={12}>
+                <Entry
+                  title="Interests"
+                  desc={["I'm always interested in finding better ways of doing not only my work but anything else around me, most of the times by automating processes. Sometimes the secret is on improving existing features than introducing new ones. When handling any problem, I always try to find every solution possible and its outcomes. I've always had a passion for philosophy and culture, finding myself many times reading and learning about history and foreign tales. In my opinion, the best way to express ourselves is through music, which became a part of my life since little.",
+                   "Most of my free time I spent programming my own projects and ideas as well as studying novelty subjects, keeping up to date with the ever changing world. Since little that I love gaming and music, which are the main ways I recharge my energy."]}
+                  date=""
+                  altV
+                  /* image={react} */
+                />
+                {/* <Card
                   title="Interests"
                   desc="I'm always interested in finding better ways of doing not only my work but anything else around me, most of the times by automating processes.
                   Sometimes the secret is on improving existing features than introducing new ones.
@@ -148,7 +164,7 @@ export default function Home() {
                   text="Most of my free time I spent programming my own projects and ideas as well as studying novelty subjects, keeping up to date with the ever changing world.
                   Since little that I love gaming and music, which are the main ways I recharge my energy.
                   "
-                />
+                /> */}
               </Grid>
             </Grid>
             <Grid item xs={10}>
