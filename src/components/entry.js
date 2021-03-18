@@ -28,7 +28,7 @@ const Entry = (props) => {
     return (
         <Grid container justify="center" className={entryStyles.container}>
             {!altV &&
-                <Grid item xs={1} /* sm={1} */>
+                <Grid item xs={2} sm={1}>
                     <Grid container className={entryStyles.avatarContainer} >
                         <Avatar variant="rounded" alt={alt || title} src={image} className={entryStyles.avatar}>
                             {" "}
@@ -36,19 +36,19 @@ const Entry = (props) => {
                     </Grid>
                 </Grid>
             }
-            <Grid item xs={altV ? 12 : 11} /* sm={8} */ className={entryStyles.titleContainer}>
+            <Grid item xs={altV ? 11 : 10} sm={altV ? 12 : 11} className={entryStyles.titleContainer}>
                 <Grid container spacing={2} alignItems="center">
-                    <Grid item xs={date ? 9 : 12}>
+                    <Grid item xs={12} sm={date ? 9 : 12}>
                         <h2 className={entryStyles.title}>{title}</h2>
                     </Grid>
                     {date &&
-                        <Grid container justify="flex-end" item xs={3}>
+                        <Grid container /* justify="flex-end" */ item xs={12} sm={3}>
                             <h3 className={entryStyles.time}>{date}</h3>
                         </Grid>
                     }
                 </Grid>
                 <Grid container spacing={2}>
-                    <Grid item xs={altV ? 10 : 8} >
+                    <Grid item xs={12} sm={altV ? 10 : 8} >
                         {desc.map((d, i) =>
                             <p key={i} className={entryStyles.description}>{d}</p>
                         )}
@@ -64,7 +64,7 @@ const Entry = (props) => {
                 </Grid>
                 {!altV &&
                     <Grid container spacing={2}>
-                        <Grid item xs={8} container>
+                        <Grid item xs={12} sm={8} container>
                             {secondBtn &&
                                 <Grid container spacing={1} style={{ paddingBottom: '16px' }}>
                                     <Grid item container xs={12} md={5}>
@@ -84,7 +84,7 @@ const Entry = (props) => {
                             {icons.map((icon, i) => <Avatar variant="square" key={i} alt={`${alt} icon ${i}`} src={icon} className={entryStyles.stack} />)}
                         </Grid>
                         {textBtn &&
-                            <Grid container item xs={4} justify="flex-end">
+                            <Grid container item xs={12} sm={4} justify="flex-end">
                                 <Button href={linkBtn} className={entryStyles.btn} target="_blank" fullWidth variant="contained" color="primary">
                                     {textBtn}
                                 </Button>

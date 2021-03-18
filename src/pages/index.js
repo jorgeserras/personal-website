@@ -295,7 +295,7 @@ And much more
             <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Nomad Card City | Full Stack Developer"
-                desc={["Foreign startup with two products aiming at providing cashback rewards for customers through gamification. Nomad Card is a PWA webapp for local businesses (uses GeoLocationand QR scanning) while Tribrs is a Shopify app for online stores. All the Front-End and part ofBack-End was developed by myself being still an active project."]}
+                desc={["Foreign startup with two products aiming at providing cashback rewards for customers through gamification. Nomad Card is a PWA webapp for local businesses (uses GeoLocation and QR scanning) while Tribrs is a Shopify app for online stores. All the Front-End and part ofBack-End was developed by myself being still an active project."]}
                 date="Sep. 2019 - Present"
                 alt="Nomad"
                 icons={[react, materialUi, stripe, pwa, aws, nodejs, mongodb, mapbox, figma]}
@@ -307,7 +307,7 @@ And much more
             <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Tribrs | Front End Developer"
-                desc={["Foreign startup with two products aiming at providing cashback rewards for customers through gamification. Nomad Card is a PWA webapp for local businesses (uses GeoLocationand QR scanning) while Tribrs is a Shopify app for online stores. All the Front-End and part ofBack-End was developed by myself being still an active project."]}
+                desc={["Foreign startup with two products aiming at providing cashback rewards for customers through gamification. Nomad Card is a PWA webapp for local businesses (uses GeoLocation and QR scanning) while Tribrs is a Shopify app for online stores. All the Front-End and part ofBack-End was developed by myself being still an active project."]}
                 date="Mar. 2020 - Present"
                 alt="Tribrs"
                 icons={[react, materialUi, stripe, javascript, aws, nodejs, mongodb, shopify, figma]}
@@ -331,7 +331,7 @@ And much more
             <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Muvsy | Founder & Tech Lead"
-                desc={["Company started with the aim of revolutionizing the moving sector by providing an intuitive and simple experience to customers. Built all the Front-End while participating in the product definition. Project currently on standby due to COVID-19 :("]}
+                desc={["Company started with the aim of revolutionizing the moving sector by providing an intuitive and simple experience to customers. Built all the Front-End while participating in the product definition. Project currently on standby due to COVID-19."]}
                 date="Mar. 2020 - Aug. 2020"
                 alt="Muvsy"
                 icons={[react, materialUi, heroku, cloudflare, analytics, figma]}
