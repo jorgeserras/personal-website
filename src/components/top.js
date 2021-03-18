@@ -99,41 +99,41 @@ const Top = () => {
 
             </Grid>
             <Grid item xs={10} md={4} className={classes.title}>
-                <h1>Hi, I'm a </h1>
+                <h1>Hi, I'm {item[0] === 'E' ? 'an' : 'a'}</h1>
                 {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
-                    <animated.div class="transitions-item" key={key} style={rest} onClick={reset}>
-                        <animated.div style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>
-                    </animated.div>
+                        <animated.div className="transitions-item" key={key} style={rest} onClick={reset}>
+                            <animated.div style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>
+                        </animated.div>
                 ))}
                 <p>Front End / Back End / Machine Learning / Data Science / Electronics</p>
                 <br />
-                <Button variant="contained" color="secondary" maxWidth="360px">Contact me</Button>
+                <Button variant="contained" target="_blank" href="https://www.linkedin.com/in/jorgeserras/" color="secondary" /* maxWidth="360px" */>Contact me</Button>
             </Grid>
 
             {width === 'xs' || width === 'sm' ? 
                 null
              :
-                <Grid item xs={6} /* class="container" */>
+                <Grid item xs={6} /* className="container" */>
                     <Grid container justify="center" alignItems="center">
-                        {/* <animated.div class="card1" style={{ transform: props.xy.interpolate(trans1) }} /> */}
-                        <div class="card2" style={{ transform: trans2(0,0) }} />
-                        <animated.div class="card3" style={{ transform: props.xy.interpolate(trans3) }} />
-                        <animated.div class="card4" style={{ transform: props.xy.interpolate(trans4) }} />
-                        <animated.div class="card5" style={{ transform: props.xy.interpolate(trans5) }} />
-                        <animated.div class="card6" style={{ transform: props.xy.interpolate(trans6) }} />
-                        <animated.div class="card7" style={{ transform: props.xy.interpolate(trans7) }} />
-                        <animated.div class="card8" style={{ transform: props.xy.interpolate(trans8) }} />
-                        <animated.div class="card9" style={{ transform: props.xy.interpolate(trans9) }} />
+                        {/* <animated.div className="card1" style={{ transform: props.xy.interpolate(trans1) }} /> */}
+                        <div className="card2" style={{ transform: trans2(0,0) }} />
+                        <div className="card3" style={{ transform: trans3(0,0) }} /> 
+                        <div className="card4" style={{ transform: trans4(0,0) }} />
+                        <animated.div className="card5" style={{ transform: props.xy.interpolate(trans5) }} />
+                        <div className="card6" style={{ transform: trans6(0,0) }} />
+                        <div className="card7" style={{ transform: trans7(0,0) }} />
+                        <div className="card8" style={{ transform: trans8(0,0) }} />
+                        <div className="card9" style={{ transform: trans9(0,0) }} />
 
-                        <animated.div class="card10" style={{ transform: props.xy.interpolate(trans10) }} />
-                        <animated.div class="card11" style={{ transform: props.xy.interpolate(trans11) }} />
-                        <animated.div class="card12" style={{ transform: props.xy.interpolate(trans12) }} />
-                        <animated.div class="card13" style={{ transform: props.xy.interpolate(trans13) }} />
-                        <animated.div class="card14" style={{ transform: props.xy.interpolate(trans14) }} />
-                        <animated.div class="card15" style={{ transform: props.xy.interpolate(trans15) }} />
-                        <animated.div class="card16" style={{ transform: props.xy.interpolate(trans16) }} />
-                        <animated.div class="card17" style={{ transform: props.xy.interpolate(trans17) }} />
-                        <animated.div class="card18" style={{ transform: props.xy.interpolate(trans18) }} />
+                        <div className="card10" style={{ transform: trans10(0,0) }} />
+                        <div className="card11" style={{ transform: trans11(0,0) }} />
+                        <div className="card12" style={{ transform: trans12(0,0) }} />
+                        <div className="card13" style={{ transform: trans13(0,0) }} />
+                        <div className="card14" style={{ transform: trans14(0,0) }} />
+                        <div className="card15" style={{ transform: trans15(0,0) }} />
+                        <div className="card16" style={{ transform: trans16(0,0) }} />
+                        <div className="card17" style={{ transform: trans17(0,0) }} />
+                        <div className="card18" style={{ transform: trans18(0,0) }} />
 
                     </Grid>
                 </Grid >

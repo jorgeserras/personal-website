@@ -1,12 +1,11 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+/* import { Link, graphql, useStaticQuery } from "gatsby" */
+import { makeStyles } from '@material-ui/core/styles'
+/* import AppBar from '@material-ui/core/AppBar'
+import Toolbar from '@material-ui/core/Toolbar'
+import Button from '@material-ui/core/Button' */
 
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Button from '@material-ui/core/Button';
-
-import headerStyles from "./header.module.scss"
+/* import headerStyles from "./header.module.scss" */
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,9 +21,9 @@ const useStyles = makeStyles((theme) => ({
 
 const Header = () => {
 
-const classes = useStyles();
+const classes = useStyles()
 
-  const data = useStaticQuery(graphql`
+/*   const data = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
@@ -32,7 +31,7 @@ const classes = useStyles();
         }
       }
     }
-  `)
+  `) */
 
   return (
       <div className={classes.root}>

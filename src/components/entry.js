@@ -16,7 +16,6 @@ const Entry = (props) => {
         title,
         desc = [],
         date,
-        tags = [],
         secondBtn,
         secBtnTxt1 = "",
         secBtnTxt2 = "",
@@ -74,9 +73,11 @@ const Entry = (props) => {
                                         </Button>
                                     </Grid>
                                     <Grid item container xs={12} md={5}>
-                                        <Button href={secBtnLnk2} className={entryStyles.btn} target="_blank" fullWidth variant="contained" color="secondary">
-                                            {secBtnTxt2}
-                                        </Button>
+                                        {secBtnTxt2 &&
+                                            <Button href={secBtnLnk2} className={entryStyles.btn} target="_blank" fullWidth variant="contained" color="secondary">
+                                                {secBtnTxt2}
+                                            </Button>
+                                        }
                                     </Grid>
                                 </Grid>
                             }
