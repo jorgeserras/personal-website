@@ -116,25 +116,66 @@ const Top = () => {
                 <Grid item xs={6} /* className="container" */>
                     <Grid container justify="center" alignItems="center">
                         {/* <animated.div className="card1" style={{ transform: props.xy.interpolate(trans1) }} /> */}
-                        <div className="card2" style={{ transform: trans2(0,0) }} />
-                        <div className="card3" style={{ transform: trans3(0,0) }} /> 
-                        <div className="card4" style={{ transform: trans4(0,0) }} />
+                        <div className="cardContainer" style={{ transform: trans2(0,0), width: '19ch', height: '17ch' }}>
+                            <div className="card2" /* style={{ transform: trans2(0,0) }} */ />
+                        </div>
+                        <div className="cardContainer" style={{ transform: trans3(0,0), width: '15ch', height: '15ch'  }}>
+                            <div className="card3"  /> 
+                        </div>
+                        <div className="cardContainer" style={{ transform: trans4(0,0), width: '14ch', height: '16ch'  }}>
+                            <div className="card4"  />
+                        </div>
+                        
                         <animated.div className="card5" style={{ transform: props.xy.interpolate(trans5) }} />
-                        <div className="card6" style={{ transform: trans6(0,0) }} />
-                        <div className="card7" style={{ transform: trans7(0,0) }} />
-                        <div className="card8" style={{ transform: trans8(0,0) }} />
-                        <div className="card9" style={{ transform: trans9(0,0) }} />
 
-                        <div className="card10" style={{ transform: trans10(0,0) }} />
-                        <div className="card11" style={{ transform: trans11(0,0) }} />
-                        <div className="card12" style={{ transform: trans12(0,0) }} />
-                        <div className="card13" style={{ transform: trans13(0,0) }} />
-                        <div className="card14" style={{ transform: trans14(0,0) }} />
-                        <div className="card15" style={{ transform: trans15(0,0) }} />
-                        <div className="card16" style={{ transform: trans16(0,0) }} />
-                        <div className="card17" style={{ transform: trans17(0,0) }} />
-                        <div className="card18" style={{ transform: trans18(0,0) }} />
+                        <div className="cardContainer" style={{ transform: trans6(0,0), width: '12ch', height: '12ch' }}>
+                            <div className="card6" /* style={{ transform: trans6(0,0) }} */ />
+                        </div>
+                        <div className="cardContainer" style={{ transform: trans7(0,0), width: '15ch', height: '9ch' }}>
+                            <div className="card7" /* style={{ transform: trans7(0,0) }} */ />
+                        </div>
+                        <div className="cardContainer" style={{ transform: trans8(0,0), width: '12ch', height: '12ch' }}>
+                            <div className="card8" /* style={{ transform: trans8(0,0) }} */ />
+                        </div>
+                        
+                        <div className="cardContainer" style={{ transform: trans9(0,0), width: '17ch', height: '6ch' }}>
+                            <div className="card9" /* style={{ transform: trans9(0,0) }} */ />
+                        </div>
+                        
+                        <div className="cardContainer" style={{ transform: trans10(0,0), width: '16ch', height: '15ch' }}>
+                            <div className="card10" /* style={{ transform: trans10(0,0) }} */ />
+                        </div>
+                        <div className="cardContainer" style={{ transform: trans11(0,0), width: '22.5ch', height: '17ch' }}>
+                            <div className="card11" /* style={{ transform: trans11(0,0) }} */ />
+                        </div>
+                        
+                        <div className="cardContainer" style={{ transform: trans12(0,0), width: '11.5ch', height: '13ch' }}>
+                            <div className="card12" /* style={{ transform: trans12(0,0) }} */ />
+                        </div>
+                        
+                        <div className="cardContainer" style={{ transform: trans13(0,0), width: '10ch', height: '15ch' }}>
+                            <div className="card13" /* style={{ transform: trans13(0,0) }} */ />
+                        </div>
+                        
+                        <div className="cardContainer" style={{ transform: trans14(0,0), width: '21ch', height: '13ch' }}>
+                            <div className="card14" /* style={{ transform: trans14(0,0) }} */ />
+                        </div>
+                        
+                        <div className="cardContainer" style={{ transform: trans15(0,0), width: '23ch', height: '7.5ch' }}>
+                            <div className="card15" /* style={{ transform: trans15(0,0) }} */ />
 
+                        </div>
+                        <div className="cardContainer" style={{ transform: trans16(0,0), width: '14ch', height: '7.2ch' }}>
+                            <div className="card16" /* style={{ transform: trans16(0,0) }} */ />
+                        </div>
+                        
+                        <div className="cardContainer" style={{ transform: trans17(0,0), width: '10ch', height: '8ch' }}>
+                            <div className="card17" /* style={{ transform: trans17(0,0) }} */ />
+                        </div>
+                        
+                        <div className="cardContainer" style={{ transform: trans18(0,0), width: '12ch', height: '12ch' }}>
+                            <div className="card18" /* style={{ transform: trans18(0,0) }} */ />
+                        </div>
                     </Grid>
                 </Grid >
             }
