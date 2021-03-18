@@ -120,7 +120,7 @@ export default function Home() {
             <Grid item xs={10}>
               <h1>About me</h1>
             </Grid>
-            <Grid item container xs={10} justify="space-between">
+            <Grid item container xs={12} sm={10} justify="space-between">
               <Grid item xs={12} sm={12}>
                 <Entry
                   title="Introduction"
