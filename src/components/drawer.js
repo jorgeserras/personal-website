@@ -146,7 +146,7 @@ const FloatCard = ({ title }) => {
             </p>
         </Grid>
         <Grid container justify='center'>
-            <Button className={classes.btn} variant="contained" color="primary">Download CV</Button>
+            <Button className={classes.btn} variant="contained" href="/JorgeSerras_CV.pdf" target="_blank" color="primary">Download CV</Button>
         </Grid>
       </div>
     </Drawer>
