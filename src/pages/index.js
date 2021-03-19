@@ -124,8 +124,8 @@ export default function Home() {
               <Grid item xs={12} sm={12}>
                 <Entry
                   title="Introduction"
-                  desc={["I finished my Master's Degree in Electrical and Computers Engineering on Control and Decision systems. My dissertation falls in Machine Learning, more specifically in the development of a complete system for Anomaly detection in multivariate time series. The latter is known as METEOR and can be accessed freely. I always have active personal projects and hobbies to improve other skills outside work's scope.",
-                   "Love building new things from scratch, from working with arduinos and electronic components to programming web apps. I like everything associated to Engineering and I'm passionate for History and Geography. I consider myself a fast learner, learning by doing and researching about the subject independently."]}
+                  desc={["My name is Jorge Luís Fuzeta Serras and I am a devoted open source developer and engineer hailing from Lisbon, Portugal. I am always exploring new technology related areas, retaining knowledge of numerous scopes from Web Development and Data Science to Machine Learning. I finished my Master's Degree in Electrical and Computers Engineering on Control and Decision systems. My masters' thesis involved developing an outlier detection system for multivariate temporal data suited to a wide range of applications. The latter is known as METEOR and can be accessed freely.",
+                   "Love building new things from scratch, including working with arduinos and electronic components to programming web apps. I like everything associated to Engineering and I'm passionate for History and Geography. I consider myself a fast learner, learning by doing and researching about the subject independently."]}
                   date=""
                   altV
                   /* image={react} */
@@ -150,7 +150,7 @@ export default function Home() {
                 <Entry
                   title="Interests"
                   desc={["I'm always interested in finding better ways of doing not only my work but anything else around me, most of the times by automating processes. Sometimes the secret is on improving existing features than introducing new ones. When handling any problem, I always try to find every solution possible and its outcomes. I've always had a passion for philosophy and culture, finding myself many times reading and learning about history and foreign tales. In my opinion, the best way to express ourselves is through music, which became a part of my life since little.",
-                   "Most of my free time I spent programming my own projects and ideas as well as studying novelty subjects, keeping up to date with the ever changing world. Since little that I love gaming and music, which are the main ways I recharge my energy."]}
+                   "Most of my free time I spent programming my own projects and ideas as well as studying novelty subjects, keeping up to date with the ever changing world. I love gaming and music, which are the main ways I recharge my energy."]}
                   date=""
                   altV
                   /* image={react} */
@@ -200,7 +200,7 @@ export default function Home() {
             <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Web Development"
-                desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
+                desc={["From Progressive Web apps to internal management platforms", "Employment of the most recent frameworks"]}
                 date=""
                 image={react}
               />
@@ -208,7 +208,7 @@ export default function Home() {
             <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Machine Learning | Data Science"
-                desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
+                desc={["Implementation of automatic and efficient tools for internal processes", "Development and Research of data analysis programs"]}
                 date=""
                 image={machineLearning}
               />
@@ -216,7 +216,7 @@ export default function Home() {
             <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Team & Project Management"
-                desc={["Major in Systems, Decision and Control & Minor in Computers", "Second Cycle's Average: 17"]}
+                desc={["Experience in managing development teams", "Contact with foreign clients"]}
                 date=""
                 image={managment}
               />
@@ -295,7 +295,7 @@ And much more
             <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Nomad Card City | Full Stack Developer"
-                desc={["Foreign startup with two products aiming at providing cashback rewards for customers through gamification. Nomad Card is a PWA webapp for local businesses (uses GeoLocation and QR scanning) while Tribrs is a Shopify app for online stores. All the Front-End and part ofBack-End was developed by myself being still an active project."]}
+                desc={["Foreign startup aiming at providing cashback rewards for customers of local businesses through gamification. Nomad Card is a PWA webapp for local businesses (uses GeoLocation and QR scanning). All the Front-End and part of Back-End was developed by myself being still an active project."]}
                 date="Sep. 2019 - Present"
                 alt="Nomad"
                 icons={[react, materialUi, stripe, pwa, aws, nodejs, mongodb, mapbox, figma]}
@@ -307,7 +307,7 @@ And much more
             <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Tribrs | Front End Developer"
-                desc={["Foreign startup with two products aiming at providing cashback rewards for customers through gamification. Nomad Card is a PWA webapp for local businesses (uses GeoLocation and QR scanning) while Tribrs is a Shopify app for online stores. All the Front-End and part ofBack-End was developed by myself being still an active project."]}
+                desc={["Foreign startup (associated to Nomad Card City) which aims at providing cashback rewards for customers through a Shopify app for online stores. All the Front-End was developed by myself being still an active project."]}
                 date="Mar. 2020 - Present"
                 alt="Tribrs"
                 icons={[react, materialUi, stripe, javascript, aws, nodejs, mongodb, shopify, figma]}
@@ -320,7 +320,7 @@ And much more
               <Entry
                 title="Relive | Tech Lead"
                 desc={["Leading the Tech Department of a Proptech startup aiming to provide a one-stop-shop real state experience. Our main platform is currently in WordPress while having several internal developed apps mainly for CRM and integrations with other agencies (Idealista, Imovirtual...)"]}
-                date="May 2020 - Present"
+                date="May 2020 - Feb. 2021"
                 alt="Relive"
                 icons={[wordpress, php, react, materialUi, heroku, postgresql, drive, nodejs, mongodb, javascript, cloudflare, analytics, slack, ruby, rails]}
                 textBtn="Relive website"
