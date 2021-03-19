@@ -35,28 +35,6 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-const widthSize = window.innerWidth / 2
-const heightSize = window.innerHeight / 2
-
-const calc = (x, y) => [x - widthSize, y - heightSize]
-/* const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)` */
-const trans2 = (x, y) => `translate3d(${x / 8 + (widthSize / 3)}px,${y / 8 - (heightSize / 7)}px,0)`
-const trans3 = (x, y) => `translate3d(${x / 6 - (widthSize / 5)}px,${y / 6 - (heightSize / 7)}px,0)`
-const trans4 = (x, y) => `translate3d(${x / 7 + (widthSize / 3.3)}px,${y / 7 + (heightSize / 1.7)}px,0)`
-const trans5 = (x, y) => `translate3d(${x / 5 - (widthSize / 12)}px,${y / 5 + (heightSize / 2.5)}px,0)`
-const trans6 = (x, y) => `translate3d(${x / 7 + 20}px,${y / 7 + (heightSize / 1.3)}px,0)`
-const trans7 = (x, y) => `translate3d(${x / 7 + (widthSize / 16)}px,${y / 7 - (heightSize / 6)}px,0)`
-const trans8 = (x, y) => `translate3d(${x / 8}px,${y / 8 + 30}px,0)`
-const trans9 = (x, y) => `translate3d(${x / 7 - (widthSize / 7)}px,${y / 7 + (heightSize / 6)}px,0)`
-const trans10 = (x, y) => `translate3d(${x / 7 + (widthSize / 3.8)}px,${y / 7 + (heightSize / 4)}px,0)`
-const trans11 = (x, y) => `translate3d(${x / 7 - (widthSize / 2.5)}px,${y / 7 - (heightSize / 6)}px,0)`
-const trans12 = (x, y) => `translate3d(${x / 7 - (widthSize / 3)}px,${y / 7 + (heightSize / 6)}px,0)`
-const trans13 = (x, y) => `translate3d(${x / 7 - (widthSize / 4)}px,${y / 7 + (heightSize / 1.6)}px,0)`
-const trans14 = (x, y) => `translate3d(${x / 7 + (widthSize / 4.5)}px,${y / 7 + (heightSize / 1.2)}px,0)`
-const trans15 = (x, y) => `translate3d(${x / 7 - (widthSize / 3)}px,${y / 7 + (heightSize / 2.7)}px,0)`
-const trans16 = (x, y) => `translate3d(${x / 7 + (widthSize / 16)}px,${y / 7 + (heightSize / 1.8)}px,0)`
-const trans17 = (x, y) => `translate3d(${x / 7 - (widthSize / 7)}px,${y / 7 + (heightSize / 1.3)}px,0)`
-const trans18 = (x, y) => `translate3d(${x / 7 + (widthSize / 2.7)}px,${y / 7 + (heightSize / 1.1)}px,0)`
 
 const Top = () => {
 
@@ -65,6 +43,8 @@ const Top = () => {
     const ref = useRef([])
     const classes = useStyles()
     const [item, setItem] = useState('Developer')
+    const [windowSize, setWindowSize] = useState([0,0])
+
     const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }))
 
     const transitions = useTransition(item, null, {
@@ -89,6 +69,38 @@ const Top = () => {
         ref.current.push(setTimeout(() => setItem('Tech Lead'), 15000))
         /* ref.current.push(setTimeout(() => reset(), 15000)) */
     }, [])
+
+    const widthSize = windowSize[0]
+    const heightSize = windowSize[1]
+
+    const calc = (x, y) => [x - widthSize, y - heightSize]
+    const trans2 = (x, y) => `translate3d(${x / 8 + (widthSize / 3)}px,${y / 8 - (heightSize / 7)}px,0)`
+    const trans3 = (x, y) => `translate3d(${x / 6 - (widthSize / 5)}px,${y / 6 - (heightSize / 7)}px,0)`
+    const trans4 = (x, y) => `translate3d(${x / 7 + (widthSize / 3.3)}px,${y / 7 + (heightSize / 1.7)}px,0)`
+    const trans5 = (x, y) => `translate3d(${x / 5 - (widthSize / 12)}px,${y / 5 + (heightSize / 2.5)}px,0)`
+    const trans6 = (x, y) => `translate3d(${x / 7 + 20}px,${y / 7 + (heightSize / 1.3)}px,0)`
+    const trans7 = (x, y) => `translate3d(${x / 7 + (widthSize / 16)}px,${y / 7 - (heightSize / 6)}px,0)`
+    const trans8 = (x, y) => `translate3d(${x / 8}px,${y / 8 + 30}px,0)`
+    const trans9 = (x, y) => `translate3d(${x / 7 - (widthSize / 7)}px,${y / 7 + (heightSize / 6)}px,0)`
+    const trans10 = (x, y) => `translate3d(${x / 7 + (widthSize / 3.8)}px,${y / 7 + (heightSize / 4)}px,0)`
+    const trans11 = (x, y) => `translate3d(${x / 7 - (widthSize / 2.5)}px,${y / 7 - (heightSize / 6)}px,0)`
+    const trans12 = (x, y) => `translate3d(${x / 7 - (widthSize / 3)}px,${y / 7 + (heightSize / 6)}px,0)`
+    const trans13 = (x, y) => `translate3d(${x / 7 - (widthSize / 4)}px,${y / 7 + (heightSize / 1.6)}px,0)`
+    const trans14 = (x, y) => `translate3d(${x / 7 + (widthSize / 4.5)}px,${y / 7 + (heightSize / 1.2)}px,0)`
+    const trans15 = (x, y) => `translate3d(${x / 7 - (widthSize / 3)}px,${y / 7 + (heightSize / 2.7)}px,0)`
+    const trans16 = (x, y) => `translate3d(${x / 7 + (widthSize / 16)}px,${y / 7 + (heightSize / 1.8)}px,0)`
+    const trans17 = (x, y) => `translate3d(${x / 7 - (widthSize / 7)}px,${y / 7 + (heightSize / 1.3)}px,0)`
+    const trans18 = (x, y) => `translate3d(${x / 7 + (widthSize / 2.7)}px,${y / 7 + (heightSize / 1.1)}px,0)`
+
+
+
+    useEffect(() => { /* window does not work in SSR so it must be done inside of useEffect */
+        const widthSize = window.innerWidth / 2
+        const heightSize = window.innerHeight / 2
+        setWindowSize([widthSize, heightSize])
+    }, [])
+
+
 
     useEffect(() => void reset(), [])
 

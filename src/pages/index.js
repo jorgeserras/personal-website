@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react'
+import React from 'react'
 /* import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar'; */
 import Grid from '@material-ui/core/Grid'
@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 import Head from "../components/head"
 import FloatCard from "../components/drawer"
 import '../styles/index.scss'
-/* import Top from "../components/top" */
+import Top from "../components/top"
 
 import Entry from "../components/entry"
 /* import Card from "../components/card" */
@@ -60,8 +60,6 @@ import relive from '../styles/imgs/relive.jpg'
 import machineLearning from '../styles/imgs/machineLearning.png'
 import managment from '../styles/imgs/managment.jpg'
 
-const Top = lazy(() => import('../components/top'))
-
 export default function Home() {
 
   return <MuiThemeProvider theme={theme}>
@@ -91,9 +89,9 @@ export default function Home() {
       </CardActions>
     </Card> */}
 
-        <Suspense fallback={<></>}>
-          <Top />
-        </Suspense>
+        
+      <Top />
+        
 
       <div className="relative -mt-12 lg:-mt-24">
         <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" style={{ display: 'block', verticalAlign: 'middle' }}>
