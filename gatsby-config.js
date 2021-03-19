@@ -42,7 +42,6 @@ module.exports = {
           injectFirst: true,
         },
       },
-    },
-    'gatsby-plugin-styled-components',
+    }
   ],
 }
