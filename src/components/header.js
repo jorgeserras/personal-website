@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from 'react-helmet'
 /* import { Link, graphql, useStaticQuery } from "gatsby" */
 import { makeStyles } from '@material-ui/core/styles'
 /* import AppBar from '@material-ui/core/AppBar'
@@ -34,9 +35,61 @@ const classes = useStyles()
   `) */
 
   return (
-      <div className={classes.root}>
-
-    </div>
+      <Helmet
+        title="Jorge Serras | Let me introduce myself"
+        link={[
+          {"rel": "icon", 
+           "type": "image/png", 
+           "href": "favicon.ico"
+          }
+         ]}
+        meta={[
+          {
+            name: 'description',
+            content: "I'm Jorge Serras, an Electrical and Computers engineer from Portugal. Feel free to explore and experience some of my personal projects and do not hesitate to contact me!",
+          },
+          {
+            name: 'keywords',
+            content: "jorgeserras, jorge, serras, engineer, outlier, detection, master, science, research, portuguese, IST, programmer, data science, machine learning, electrical, portugal, meteor",
+          },
+          {
+            name: 'og:title',
+            content: "Jorge Serras | Let me introduce myself",
+          },
+          {
+            name: 'og:description',
+            content: "I'm Jorge Serras, an Electrical and Computers engineer from Portugal. Feel free to explore and experience some of my personal projects and do not hesitate to contact me!",
+          },
+          {
+            name: 'og:type',
+            content: 'website',
+          },
+          {
+            name: 'og:image',
+            content: '/apple-icon.png',
+          },
+          {
+            name: 'og:url',
+            content: 'https://jorgeserras.com',
+          },
+          {
+            name: 'twitter:card',
+            content: 'summary',
+          },
+          {
+            name: 'twitter:description',
+            content: "I'm Jorge Serras, an Electrical and Computers engineer from Portugal. Feel free to explore and experience some of my personal projects and do not hesitate to contact me!",
+          },
+          {
+            name: 'twitter:creator',
+            content: 'Jorge Serras',
+          },
+          {
+            name: 'twitter:image',
+            content: '/apple-icon.png',
+          },
+        ]}
+      />
     /* <header className={headerStyles.header}>
       <h1>
         <Link className={headerStyles.title} to="/">

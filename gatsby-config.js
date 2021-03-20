@@ -6,8 +6,11 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Jorge Serras | Electrical engineer developer',
-    author: 'Jorge Serras'
+    title: "Jorge Serras | Electrical engineer developer",
+    description: "I'm Jorge Serras, an Electrical and Computers engineer from Portugal. Feel free to explore and experience some of my personal projects and do not hesitate to contact me!",
+    url: "https://jorgeserras.com",
+    image: "/favicon.ico",
+    author: "Jorge Serras"
   },
   plugins: [
     'gatsby-plugin-sass',
