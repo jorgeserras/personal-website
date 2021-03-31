@@ -122,8 +122,8 @@ export default function Home() {
               <Grid item xs={12} sm={12}>
                 <Entry
                   title="Introduction"
-                  desc={["My name is Jorge Luís Fuzeta Serras and I am a devoted open source developer and engineer hailing from Lisbon, Portugal. I am always exploring new technology related areas, retaining knowledge of numerous scopes from Web Development and Data Science to Machine Learning. I finished my Master's Degree in Electrical and Computers Engineering on Control and Decision systems. My masters' thesis involved developing an outlier detection system for multivariate temporal data suited to a wide range of applications. The latter is known as METEOR and can be accessed freely.",
-                   "Love building new things from scratch, including working with arduinos and electronic components to programming web apps. I like everything associated to Engineering and I'm passionate for History and Geography. I consider myself a fast learner, learning by doing and researching about the subject independently."]}
+                  desc={["My name is Jorge Luís Fuzeta Serras and I am a devoted open-source developer and engineer hailing from Lisbon, Portugal. I am always exploring new technology-related areas, retaining knowledge of numerous scopes from Web Development and Data Science to Machine Learning. I finished my Master's Degree in Electrical and Computers Engineering on Control and Decision systems. My masters' thesis involved developing an outlier detection system for multivariate temporal data suited to a wide range of applications. The latter is known as METEOR and can be accessed freely.",
+                   "Love building new things from scratch, including working with arduinos and electronic components to programming web apps. I like everything associated with Engineering and I'm passionate about History and Geography. I consider myself a fast learner, learning by doing and researching about the subject independently."]}
                   date=""
                   altV
                   /* image={react} */
@@ -147,8 +147,8 @@ export default function Home() {
               <Grid item xs={12} sm={12}>
                 <Entry
                   title="Interests"
-                  desc={["I'm always interested in finding better ways of doing not only my work but anything else around me, most of the times by automating processes. Sometimes the secret is on improving existing features than introducing new ones. When handling any problem, I always try to find every solution possible and its outcomes. I've always had a passion for philosophy and culture, finding myself many times reading and learning about history and foreign tales. In my opinion, the best way to express ourselves is through music, which became a part of my life since little.",
-                   "Most of my free time I spent programming my own projects and ideas as well as studying novelty subjects, keeping up to date with the ever changing world. I love gaming and music, which are the main ways I recharge my energy."]}
+                  desc={["I'm always interested in finding better ways of doing not only my work but anything else around me, most of the time by automating processes. Sometimes the secret is on improving existing features than introducing new ones. When handling any problem, I always try to find every solution possible and its outcomes. I've always had a passion for philosophy and culture, finding myself many times reading and learning about history and foreign tales. In my opinion, the best way to express ourselves is through music, which became a part of my life since little.",
+                   "Most of my free time I spent programming my own projects and ideas as well as studying novelty subjects, keeping up to date with the ever-changing world. I love gaming and music, which are the main ways I recharge my energy."]}
                   date=""
                   altV
                   /* image={react} */
@@ -234,7 +234,7 @@ And much more
             <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Telecomunications Institute | Research Grant"
-                desc={["Associated to the research/development of an outlier detection system from patients with cancer, integrated in project PERSEIDS. Supported by the Portuguese Foundation for Science and Technology, INESC-ID and projects PREDICT and MATISSE with funding from the European Union’s Horizon 2020."]}
+                desc={["Associated to the research/development of an outlier detection system from patients with cancer, integrated into project PERSEIDS. Supported by the Portuguese Foundation for Science and Technology, INESC-ID and projects PREDICT and MATISSE with funding from the European Union’s Horizon 2020."]}
                 date="Oct. 2018 - Feb. 2019"
                 secondBtn
                 secBtnTxt1 = "Project code"
@@ -257,7 +257,7 @@ And much more
             <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Machine Learning | Research Article"
-                desc={["Article published at MDPI on the Research/Development of an outlier detection for multivariate time series using Dynamic Bayesian Networks based on the above research grant."]}
+                desc={["Article published at MDPI on the Research/Development of an outlier detection algorithm for multivariate time series using Dynamic Bayesian Networks based on the above research grant."]}
                 date="Feb. 2019 - Feb. 2021"
                 alt="Research Article"
                 icons={[rLang, python, java, javascript, heroku]}
@@ -278,7 +278,7 @@ And much more
             <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Forall Phones | Front End Developer"
-                desc={["Participated in building everything Front-End associated including an internal stock controller app (Opsify), Shopify Design and internal management apps using websockets for real time sales tracking and analytics. Constant improvement and support to increase Production efficiency by optimizing UX and minimizing time consumption."]}
+                desc={["Participated in building everything Front-End associated including an internal stock controller app (Opsify), Shopify Design, and internal management apps using WebSockets for real-time sales tracking and analytics. Constant improvement and support to increase Production efficiency by optimizing UX and minimizing time consumption."]}
                 date="April 2019 - April 2020"
                 alt="Forall"
                 tags={[
@@ -293,7 +293,7 @@ And much more
             <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Nomad Card City | Full Stack Developer"
-                desc={["Foreign startup aiming at providing cashback rewards for customers of local businesses through gamification. Nomad Card is a PWA webapp for local businesses (uses GeoLocation and QR scanning). All the Front-End and part of Back-End was developed by myself being still an active project."]}
+                desc={["Foreign startup aiming at providing cashback rewards for customers of local businesses through gamification. Nomad Card is a PWA web app for local businesses (uses GeoLocation and QR scanning). All the Front-End and part of Back-End was developed by myself being still an active project."]}
                 date="Sep. 2019 - Present"
                 alt="Nomad"
                 icons={[react, materialUi, stripe, pwa, aws, nodejs, mongodb, mapbox, figma]}
@@ -305,7 +305,7 @@ And much more
             <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Tribrs | Front End Developer"
-                desc={["Foreign startup (associated to Nomad Card City) which aims at providing cashback rewards for customers through a Shopify app for online stores. All the Front-End was developed by myself being still an active project."]}
+                desc={["Foreign startup (associated with Nomad Card City) which aims at providing cashback rewards for customers through a Shopify app for online stores. All the Front-End was developed by myself being still an active project."]}
                 date="Mar. 2020 - Present"
                 alt="Tribrs"
                 icons={[react, materialUi, stripe, javascript, aws, nodejs, mongodb, shopify, figma]}
@@ -317,7 +317,7 @@ And much more
             <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Relive | Tech Lead"
-                desc={["Leading the Tech Department of a Proptech startup aiming to provide a one-stop-shop real state experience. Our main platform is currently in WordPress while having several internal developed apps mainly for CRM and integrations with other agencies (Idealista, Imovirtual...)"]}
+                desc={["Leading the Tech Department of a Proptech startup aiming to provide a one-stop-shop real state experience. Our main platform is currently in WordPress while having several internally developed apps mainly for CRM and integrations with other agencies (Idealista, Imovirtual...)"]}
                 date="May 2020 - Feb. 2021"
                 alt="Relive"
                 icons={[wordpress, php, react, materialUi, heroku, postgresql, drive, nodejs, mongodb, javascript, cloudflare, analytics, slack, ruby, rails]}
@@ -329,7 +329,7 @@ And much more
             <Grid item xs={12} sm={12} lg={10}>
               <Entry
                 title="Muvsy | Founder & Tech Lead"
-                desc={["Company started with the aim of revolutionizing the moving sector by providing an intuitive and simple experience to customers. Built all the Front-End while participating in the product definition. Project currently on standby due to COVID-19."]}
+                desc={["A Company started with the aim of revolutionizing the moving sector by providing an intuitive and simple experience to customers. Built all the Front-End while participating in the product definition. Project currently on standby due to COVID-19."]}
                 date="Mar. 2020 - Aug. 2020"
                 alt="Muvsy"
                 icons={[react, materialUi, heroku, cloudflare, analytics, figma]}
